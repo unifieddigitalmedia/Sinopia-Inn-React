@@ -1,0 +1,319 @@
+ .modalReservation {
+    display: none;
+
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.8); 
+    text-align: center;
+}
+.innermodalReservation{
+
+   display: table-cell;
+    vertical-align: middle; 
+
+}
+
+.progressIcons{
+
+position:fixed;
+top:50%;
+
+ left: 50%;
+  margin-left: -4em;
+width:200px;
+height:200px;
+
+}
+
+.closeReservation {
+  color:#cb410b!important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 100px!important;
+  font-weight: bold;
+}
+
+.closeReservation:hover,
+.closeReservation:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalReservation h1{
+
+-webkit-transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -ms-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+   transition: opacity .5s ease-in-out;
+    font-weight: 200;
+}
+
+.modalReservation i{
+
+ animation: ripple 1.5s ease-out;
+ animation-iteration-count: infinite;
+ font-size:160px!important;
+
+    }
+
+
+    @keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.innerGrid{
+
+    width:80%;
+    margin: 0 auto;
+}
+
+button.accordion {
+
+    /*background-color: #aa9d2e;*/
+
+    background-color: #f7f7f7;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size:20px;
+}
+
+.orderSummary .accordion {
+
+background-color: #aa9d2e;
+color: white;
+
+
+}
+
+.orderSummary .paymentPanel large{
+
+    width:100%;
+
+ background-color: #f7f7f7;
+
+  border:thin solid #eeeeee;
+
+
+
+
+}
+
+.summaryThirdchild{
+
+  width:100%;
+  border: red thin solid!important;
+}
+.summaryFirstchild{
+
+ background-color: #f7f7f7!important;
+ font-weight: bold!important;
+
+}
+
+.summarySecondchild label small, .summaryThirdchild label small ,.paymentPanel small{
+
+  color:#a8a7a7!important;
+
+}
+
+
+
+
+
+.orderSummary .paymentPanel {
+
+height:auto!important;
+padding: 0px 0px!important;
+overflow-x: hidden;
+
+/*border:thin solid #eeeeee;*/
+
+border:thin solid #eeeeee!important;
+
+
+}
+
+
+.orderSummary article{
+
+ border:thin solid #eeeeee!important;
+ width:100%;
+ margin:0px!important;
+ padding:20px 0px!important;
+
+
+}
+
+
+.orderSummary article label small:nth-child(2) , .orderSummary article label medium:nth-child(2){
+
+  
+
+   float:right!important;
+
+
+}
+
+.totalRow{
+
+  color:black!important;
+  font-weight: bold!important;
+}
+
+
+button.payment , article.payment {
+
+ background-color: #ffffff!important;
+ padding: 15px!important;
+ font-size:14px!important;
+ color:black;
+ border:thin solid #eeeeee;
+
+
+}
+
+
+
+.paymentArticle{
+
+     padding: 0px!important;
+}
+
+article.payment img {
+
+
+    display: inline;
+    padding:2px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+
+button.payment:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.payment.active:after {
+    content: "\2212";
+}
+
+div.paymentPanel {
+    position: relative;
+    padding: 0px 25px;
+    background-color: #eee;
+    height: 0;
+  
+    transition: height 0.2s ease-out;
+
+  overflow:auto!important;
+-ms-overflow-style:none;
+   
+}
+div.paymentPanel article{
+
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.paymentPanel medium{
+
+font-weight: 200;
+text-align: center!important;
+margin: 0px!important;
+
+}
+
+
+.active_height{
+
+
+height:300px;
+
+}
+
+.accordinContinue{
+position: absolute;
+width:30%;
+right:0!important;
+margin:15px!important;
+
+}
+
+
+.innerGrid article{
+
+ background-color:white;
+ padding:10px;
+ margin:20px;
+
+}
+
+.innerGrid label{
+
+ 
+    font-size: 18px;
+}
+
+
+.smallLabel{
+font-size: 14px!important;
+height:auto;
+  font-family: Helvetica, sans-serif;
+
+}
+large{
+    padding:20px;
+    margin:10px!important;
+    font-size:20px;
+
+}
+
+.clear {
+    clear:both;
+    line-height:0;
+}
+
+table{
+  width:100%;
+}
+
+table th {
+ font-weight: 200!important;
+}
+
+
+.moneyCell{
+
+  text-align: right!important;
+  font-weight: 200!important;
+}

@@ -1,0 +1,1 @@
+﻿const React = require('react');class CollectionOptions extends React.Component {constructor(props) {super(props);}render(){				return <article></article>				}}module.exports = CollectionOptions;

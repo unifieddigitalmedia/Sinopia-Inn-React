@@ -1,0 +1,58 @@
+.android-header{
+  
+  overflow-y: hidden;
+ -ms-overflow-style: none;
+
+.topnavbar {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  overflow-y: hidden;
+ 
+
+
+     li {
+
+    float: right;
+
+width:75px!important;
+    span {
+
+          display: block;
+          color: grey;
+          padding: 16px;
+          cursor: pointer;
+
+
+  &:hover{
+
+            color: $primary-color;
+
+  }
+    }
+
+    
+
+
+    }
+
+}
+
+.dateChooser {
+
+display: none;
+cursor: pointer;
+
+
+ @include respond-to($tablet-portrait) {
+
+ display: block;
+
+ }
+
+}
+
+
+}

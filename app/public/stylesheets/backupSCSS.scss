@@ -1,0 +1,1405 @@
+@import "modules/_payment.scss";
+@import "modules/_reservation.scss";
+@import "modules/_trip.scss";
+@import "modules/_reservationModal.scss";
+@import "modules/_googleTranslate.scss";
+@import "modules/_sideNav.scss";
+
+
+@font-face {
+  font-family: 'Waiting for the Sunrise';
+  src: url(../fonts/WaitingfortheSunrise.ttf);
+}
+
+@font-face {
+font-family: Fontspring;
+src: url(../fonts/Fontspring-DEMO-cera-medium.otf);
+}
+
+@font-face {
+font-family: FontspringLight;
+src: url(../fonts/Fontspring-DEMO-cera-light.otf);
+}
+
+@font-face {
+font-family: FontspringRegular;
+src: url(../fonts/Fontspring-DEMO-cera-regular.otf);
+}
+
+
+
+$primary-color: #cb410b;
+$secondary-color: #aa9d2e;
+$tertiary-color: #eedc00;
+$background-color-black: #000000;
+$font-color-white: #ffffff;
+
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 880px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: '(min--moz-device-pixel-ratio: 1.5), 
+                    (-o-min-device-pixel-ratio: 3/2), 
+                    (-webkit-min-device-pixel-ratio: 1.5), 
+                    (min-device-pixel-ratio: 1.5), 
+                    (min-resolution: 144dpi), 
+                    (min-resolution: 1.5dppx)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+
+medium{
+  
+  color: black !important;
+    font-weight: 200 !important;
+    font-family: Helvetica, sans-serif !important;
+
+
+}
+
+
+.reservationBtn,.paymentBtn{
+
+  width:100%;
+  color:#ffffff!important;
+  font-family: 'Waiting for the Sunrise';
+    &:hover {
+    font-weight:bolder!important;
+      cursor: pointer;
+      color: #eedc00!important;
+     
+    }
+
+
+}
+
+.paymentBtn{
+
+  font-family: Helvetica, sans-serif!important;
+
+
+}
+
+.mdl-list__item-icon{
+  
+ color:#cb410b!important;
+
+}
+
+small{
+  
+
+   font-style: italic;
+}
+
+
+.mdl-dialog__content{
+
+  
+  text-align: center;
+
+
+        .smalLogo{
+
+          margin:0 auto;
+
+        }
+
+.closeDialog{
+
+  cursor:pointer;
+  float: right;
+
+
+}
+
+
+}
+
+.filterTextbox{
+  
+
+  color:black;
+}
+
+.dialogButtonContainer button{
+
+  background-color: transparent!important;
+  border: none!important;
+  color:#cb410b!important;
+  font-family: 'Waiting for the Sunrise';
+
+   &:hover, &:focus {
+      font-weight:bolder;
+      cursor: pointer;
+    }
+
+}
+
+
+.overlay {
+
+  position: fixed;
+  height: 0%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color:$background-color-black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden!important;
+  transition: 0.5s;
+  color:$font-color-white;
+  z-index:999;
+  .overlay-content {
+
+    .closebtn {
+    position: relative;
+    float:right!important;
+    font-size: 40px!important;
+    color:$font-color-white;
+    &:hover, &:focus {
+      color:$primary-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  padding:20px;
+  position: relative;
+  top: 5%;
+  width: 60%;
+  margin: 0 auto;
+  a {
+    color:$primary-color;
+  }
+
+  form {
+  
+  display: block;
+  width: 100%;
+  .mdl-textfield, .mdl-button {
+    color: $font-color-white;
+   width:100%;
+    margin: 0 auto;
+     font-family: 'Waiting for the Sunrise';
+  }
+  .mdl-textfield__input {
+    border-bottom: 1px solid $font-color-white;
+    width:100%;
+  }
+  .mdl-textfield__label {
+    color: $font-color-white;
+  }
+  .mdl-textfield .mdl-textfield__icon {
+    width: 32px;
+    text-align: center;
+    position: absolute;
+    line-height: 1.5;
+    ~ * {
+      margin-left: 48px;
+      width: calc(100% - 48px);
+    }
+  }
+}
+
+}
+
+}
+
+
+.mdl-layout__tab-bar {
+
+  text-transform: uppercase;
+  height: 45px!important;
+  width: 97%!important;
+  overflow-x:hidden!important;
+  -ms-overflow-style:none;
+  .mdl-layout__tab {
+    
+font-family: FontspringRegular;
+  width:500px;
+    display: table-cell;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .menudivider {
+      color: #cb410b;
+    }
+    li{
+    list-style-type: none; 
+    padding:0px;
+    line-height: 45px;
+    }
+}
+
+ .dateChooser{
+
+display: none!important;
+cursor: pointer;
+
+
+ @include respond-to($tablet-portrait) {
+
+ display: block!important;
+
+ }
+
+}
+
+
+
+.portfolio-logo-row {
+
+ 
+  padding: 0;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width:100%;
+  overflow-y: hidden;
+  height:auto;
+  min-height: 100px;
+  -webkit-transition: height 0.5s;
+
+  /* Safari */
+  transition: height 0.5s;
+  background-color: #f9f8f8;
+
+  .portfolio-logo {
+  background: url(../images/logo.png) 20% no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 350px;
+  margin: auto auto 5px;
+  overflow-y: hidden;
+
+  
+
+  }
+
+
+}
+
+
+.menu {
+  padding: 0px !important;
+  position: relative !important;
+  height: 0px !important;
+  -webkit-transition: height 0.5s;
+  /* Safari */
+  transition: height 0.5s;
+  background-color: #f9f8f8 !important;
+  li {
+    &:nth-child(1) a:hover {
+      color: #d40f7d !important;
+      border-bottom: thick #d40f7d solid;
+    }
+    &:nth-child(2) a:hover {
+      color: #ffb549 !important;
+      border-bottom: thick #ffb549 solid;
+    }
+    &:nth-child(3) a:hover {
+      color: #eedc00 !important;
+      border-bottom: thick #eedc00 solid;
+    }
+    &:nth-child(4) a:hover {
+      color: #aa9d2e !important;
+      border-bottom: thick #aa9d2e solid;
+    }
+    &:nth-child(5) a:hover {
+      color: #4298b5 !important;
+      border-bottom: thick #4298b5 solid;
+    }
+    &:nth-child(6) a:hover {
+      color: #6b3077 !important;
+      border-bottom: thick #6b3077 solid;
+    }
+  }
+}
+
+.sub-menu-menu-menu {
+  display: none;
+  li {
+    color: #a7a6a6;
+    font-weight: 200;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline !important;
+      color: #cb410b !important;
+    }
+  }
+}
+
+.sub-menu-menu {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  height: 0px !important;
+  -webkit-transition: height 0.5s;
+  /* Safari */
+  transition: height 0.5s;
+  li {
+    cursor: pointer;
+    &:hover {
+      color: #cb410b !important;
+    }
+  }
+  .mdl-grid {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.active_menu {
+  height: 50px !important;
+}
+
+.active_sub_menu {
+  display: block !important;
+}
+
+.active_sub_menu_ {
+  height: 350px !important;
+}
+
+
+/********************************/
+
+
+.uppertopnav {
+  text-align: left;
+  border-top: thin solid #cb410b;
+}
+
+.innertopnav {
+  padding: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.recipes-carousel-inner {
+  width: 150%;
+  left: -25%;
+}
+
+.carousel-control {
+  &.left, &.right {
+    background-color: #000000 !important;
+    width: 25%;
+  }
+}
+
+.recipes-carousel-inner > .item {
+  &.next, &.active.right {
+    left: 0;
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+  }
+  &.prev, &.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+  }
+}
+
+.chip {
+  display: table;
+  padding: 30px 10px;
+  height: 50px;
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  margin-left: 20px;
+  line-height: 14px;
+  img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+}
+
+.chipText {
+  color: black !important;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'FontspringLight';
+}
+
+.col-xs-4 {
+  width: 33.33333333%;
+  padding: 0px !important;
+  border: medium solid white;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-chevron-left:before {
+  content: "";
+}
+
+.glyphicon-chevron-right:before {
+  content: "";
+}
+
+.blog-heading {
+  font-family: FontspringLight;
+  font-weight: 200;
+  color: #535353;
+  font {
+    color: #cb410b;
+    font-family: Helvetica, sans-serif;
+  }
+}
+
+font {
+  color: #cb410b;
+}
+
+.competitonsCarousel {
+  .mdl-cell {
+    margin: 0px !important;
+  }
+  .mdl-card__supporting-text {
+    h6 {
+      color: #cb410b !important;
+      font-weight: bold;
+      font-family: FontspringLight;
+    }
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: center;
+    background: rgb(230, 100, 50) !important;
+    background: rgba(230, 100, 50, 0.7) !important;
+  }
+}
+
+.eventItemLeft div, .eventItemRight div {
+  height: 100%;
+  text-align: center !important;
+  display: table !important;
+}
+
+.eventItemLeft div a, .eventItemRight div a {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+a {
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: #cb410b;
+  }
+}
+
+.photo2 {
+  height: 150px !important;
+  background: url('../blog/images/clouds.jpg') (center / cover);
+}
+
+.photo3 {
+  height: 150px !important;
+  background: url('../blog/images/interviews/group.jpg') (center / cover);
+}
+
+.adspace {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.blog-card {
+  width: 120% !important;
+  .mdl-card__supporting-text {
+    font-family: FontspringLight !important;
+    font-size: 12px !important;
+    text-align: left;
+    background: rgb(203, 65, 11) !important;
+    background: rgba(203, 65, 11, 0.7) !important;
+    color: white !important;
+    width: 100%;
+  }
+}
+
+.img-responsive {
+  width: 100% !important;
+  height: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.slidebutton {
+  float: right;
+}
+
+
+
+.topnavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  overflow-y: hidden !important;
+  -ms-overflow-style: none;
+     li {
+
+    float: right;
+
+
+    span {
+
+          display: block;
+          color: grey;
+       
+          padding: 16px;
+    }
+    
+
+
+    }
+
+}
+
+.android-header{
+  
+  overflow-y: hidden !important;
+
+}
+
+
+
+
+footer {
+  background-color: #f9f8f8 !important;
+  h1 {
+    font-size: 250%;
+    font-family: "FontspringRegular" !important;
+  }
+  h4 {
+    color: #cb410b !important;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: bold !important;
+  }
+  a, p , medium, small{
+    color: black !important;
+    font-weight: 200 !important;
+    font-family: Helvetica, sans-serif !important;
+    margin: 10px;
+  }
+}
+
+.headingTable{
+
+
+  background-color: black!important;
+  color:white;
+
+  th{
+  color:white!important;
+}
+
+
+
+}
+
+.subheadingTable{
+
+  th{
+  color:black!important;
+}
+
+
+}
+
+
+
+ 
+.mdl-layout__content {
+
+ul li {
+  
+ list-style-type:none;
+
+}
+.demo-card-wide, .infowindow{
+  width: 512px!important;
+}
+ .mdl-card__title {
+  width: 512px!important;
+  color: #fff;
+  height: 172px;
+  
+}
+
+.placelistitem {
+
+border-bottom:thin solid #eeeeee!important;
+padding:20px;
+
+
+}
+
+.btnLink {
+
+  float:right;
+  color:#cb410b!important ;
+  cursor: pointer;
+  font-family: 'Waiting for the Sunrise';
+
+}
+
+.btnLink:hover{
+
+  font-weight:bolder;
+}
+
+.tripConfirm{
+  
+ width:100%;
+ color:#ffffff;
+ cursor: pointer;
+ font-family: 'Waiting for the Sunrise';
+&hover{
+  color:#cb410b!important ;
+  font-weight:bolder;
+
+
+}
+}
+
+.contact-container-content{
+
+  width:100%;
+
+  height:100%;
+
+  .mdl-textfield, .mdl-button {
+  
+   width:100%;
+  
+  }
+
+text-align:center;
+color:#535353;
+
+}
+
+
+
+.hero-image-index {
+  background-image: url("../images/hero-images/homepage.jpg");
+}
+
+.hero-image-villa {
+  background-image: url("../images/hero-images/homepage1.jpg");
+}
+
+.hero-image-room {
+  background-image: url("../images/hero-images/homepage2.jpg");
+}
+
+.hero-image-travel {
+  background-image: url("../images/hero-images/homepage3.jpg");
+}
+
+.hero-image-rewards {
+  background-image: url("../images/hero-images/homepage5.jpg");
+}
+
+.hero-image-directions {
+  background-image: url("../images/hero-images/homepage6.jpg");
+}
+
+.hero-image-mobile {
+  height: auto !important;
+  position: relative;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 );
+}
+
+.icon-row {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  line-height: 2px;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 );
+  .side_menu_title_para-res {
+    text-align: center;
+    border-bottom: #cb410b thin solid;
+    .service_icon-res-heading {
+      color: #eedc00;
+    }
+    i {
+      color: #eedc00 !important;
+    }
+    .service_icon-res-text {
+      font-size: 80%;
+      font-weight: 100 !important;
+      color: #ffffff;
+    }
+  }
+}
+
+.hero-text-mobile {
+  position: relative;
+  top: 0%;
+  width: 450px;
+  color: white;
+  padding: 10px;
+  .bookingform-rewards-heading {
+    color: white;
+    font-size: 90% !important;
+    font-weight: 200;
+  }
+  .bookingform-rewards-heading1 {
+    font-size: 110%;
+    color: #3b0053;
+    font-family: 'Waiting for the Sunrise';
+    font-weight: 900;
+  }
+  .bookingform-rewards-cta {
+    color: #eedc00;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: 900 !important;
+    float: right;
+    font-size: 150% !important;
+    text-decoration: none;
+    &:hover {
+      color: #eedc00;
+      text-decoration: underline;
+    }
+  }
+  .bookingform-subtext {
+    color: black;
+    line-height: none;
+    font-size: 100%;
+  }
+}
+
+
+
+footer a:hover {
+  color: #cb410b !important;
+  text-decoration: none;
+}
+
+.mdl-mega-footer__link-list {
+  li {
+    line-height: 400% !important;
+    padding: 0px !important;
+  }
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .text {
+  color: white;
+}
+
+.download_buttons {
+  width: 130px;
+  height: 40px;
+}
+
+
+ .hero-section {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  width: 450px;
+  transform: translate(10%, -35%);
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+  padding: 10px;
+
+  .tagline{
+
+   font-family: "Waiting for the Sunrise" !important;
+
+}
+
+ @include respond-to($tablet-portrait) {
+
+   left:-30px;
+
+ }
+  .hero-text-container{
+
+    background-color:black;
+    border:$secondary-color dotted thin;
+    padding:20px;
+   
+h1 {
+    color: $secondary-color;
+    font-size: 300%;
+    padding-bottom: 10px;
+    font-family: "FontspringLight";
+  }
+  p {
+    color: white;
+    border-top:$secondary-color thin dotted;
+    padding-top: 5px;
+    font-size: 100%;
+    font-family: "FontspringLight";
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Waiting for the Sunrise';
+    color: $primary-color ;
+  }
+
+}
+
+ 
+}
+  .sticky {
+        position: fixed;
+        top:0;
+        opacity: 1.0;
+        filter: Alpha(opacity=100);
+        width: 100%;
+    }
+
+
+  .reservationform {
+    opacity: 0.8;
+    filter: Alpha(opacity = 80);
+    z-index: 999 ;
+    transition: all 0.4s ease;
+    color: black ;
+    background-color: #e9e8e8;
+    height: auto;
+    width: 100%;
+    display: table;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+     @include respond-to($tablet-portrait) {
+
+ display: none;
+
+ }
+  }
+  .formlist {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    padding: 10px;
+    z-index: 10000;
+    li {
+      display: inline-block;
+      height: 90%;
+      padding-left: 20px;
+
+
+i {
+  
+
+          width: 32px;
+          text-align: center;
+          position: absolute;
+          line-height: 1.5;
+          ~ * {
+            margin-left: 48px;
+            width: calc(100% - 48px);
+          }
+     
+}
+      input {
+        padding-right: 40px;
+        border: none;
+        height: 100% ;
+        width: 110px;
+        background-color: inherit;
+        border-right: thin solid $primary-color;
+        &:focus {
+          outline: none;
+        }
+      }
+     
+
+
+      button {
+        border: none;
+        height: 100%;
+        font-size:14px!important;
+        font-family: "Waiting for the Sunrise" ;
+        color: #ffffff ;
+        font-weight: bold ;
+        background-color: $primary-color ;
+        cursor: pointer;
+        width: 200px;
+        &:hover {
+          color: #eedc00 ;
+        }
+      }
+    }
+  }
+}
+ 
+ .row2{
+
+ background-color:#f9f8f8!important;
+
+}
+
+
+
+
+ .table {
+  display: table;
+  width: 100%;
+  @include respond-to($tablet-portrait) {
+    display: block !important;
+  }
+  .table-cell {
+    display: table-cell;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 50px;
+    width: 50%;
+
+ @include respond-to($tablet-portrait) {
+    display: block !important;
+    text-align: center !important;
+    display: inline-block !important;
+    width: 100%;
+    padding: 0px;
+  }
+
+
+.btn-link {
+  font-weight: 400;
+  color: #337ab7;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 150%;
+  font-family: "Waiting for the Sunrise";
+  color: #cb410b;
+  &.active, &:active, &[disabled] {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 150%;
+    font-family: "Waiting for the Sunrise";
+    color: #cb410b;
+  }
+  border-color: transparent;
+  &:active, &:focus, &:hover {
+    border-color: transparent;
+    outline:none;
+  }
+  &:focus, &:hover {
+    font-weight: bolder!important;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+     outline:none;
+  }
+}
+
+
+a {
+
+      color:#cb410b;
+      text-decoration:none;
+      font-family: "Waiting for the Sunrise" ;
+      font-size:150%;
+      cursor:pointer;
+      &:hover {
+          font-weight:900 ;
+        }
+
+    }
+
+    p {
+
+          font-size:14px; text-align: center; color:#535353;font-weight:100;
+
+      }
+
+
+       h3 {  border-bottom:$primary-color thin dotted;padding-bottom:30px; font-size:350%;font-weight:100; }
+
+    .mySlides {
+        display: none;
+
+      }
+
+      .w3-container {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.w3-row {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.w3-row-padding {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  padding: 0 1px;
+  > .w3-col {
+    padding: 0 1px;
+  }
+}
+
+.w3-section {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.w3-col {
+  &.s4 {
+    width: 33.33333%;
+    box-sizing: border-box;
+  }
+  &.s2 {
+    width: 16.66%;
+    box-sizing: border-box;
+  }
+  float: left;
+  width: 100%;
+}
+
+.w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+  float: left;
+  width: 100%;
+}
+
+.w3-opacity, .w3-hover-opacity:hover {
+  opacity: 0.60;
+}
+
+.w3-opacity-off, .w3-hover-opacity-off:hover {
+  opacity: 1;
+}
+
+.w3-content {
+  max-width: 980px;
+  margin: auto;
+}
+
+.w3-rest {
+  overflow: hidden;
+}
+
+
+.demo-list-three {
+  text-align: left;
+  @extend medium;
+  li span {
+    height:auto;
+ 
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;
+    .mdl-list__item-avatar {
+      color: white;
+      background-color: #cb410b;
+    }
+  }
+}
+
+.w3-display-container {
+  position: relative;
+  &:hover {
+    .w3-display-hover {
+      display: block;
+    }
+    span.w3-display-hover {
+      display: inline-block;
+    }
+  }
+  .article{
+
+  position: absoulte;
+  width:100%;
+
+  a{
+
+  font-size:200%;
+  }
+  }
+
+}
+
+.w3-content {
+  width: 100% !important;
+  max-width: 980px;
+  margin: auto;
+  height: 400px;
+}
+
+.w3-display-left {
+  position: absoulte;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+}
+
+.w3-display-right {
+  position: absoulte;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+.w3-black, .w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.w3-btn {
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.parallaxContent {
+width:100%;
+text-align:center;
+  display: inline-block;
+  margin: 0 auto !important;
+  vertical-align: middle;
+  display: table-cell;
+  z-index: 99;
+  width: 50% !important;
+  h1 {
+    text-align: center;
+    color: #bebebe;
+    font-weight: 200;
+    font-size: 200%;
+  }
+  img {
+    width: 20%;
+    padding: 1px;
+    height: 40%;
+  }
+  div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+}
+
+
+
+.mdl-list__item-primary-content,.optionsContainer span{
+
+overflow:hidden!important;
+-ms-overflow-style:none;
+font-weight:200;
+ color:#535353;
+
+}
+
+
+
+.tabcontent {
+  width: 100%;
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.reservation__content,.demo-content, table {
+
+width:100%!important;
+
+}
+
+
+
+
+table thead tr th {
+
+
+  color:#cb410b!important;
+  font-weight: 200!important;
+}
+
+
+.demo-card-wide {
+  &.mdl-card {
+    width: 600px;
+    margin: 0 auto;
+  }
+  > .mdl-card__title {
+    height: 300px;
+  }
+
+  .mdl-card__actions{
+
+  height:auto;
+
+text-align: center;
+font-size:14px!important;  
+
+ line-height: 190%;
+color:#535353;
+
+font-weight:100!important;
+
+  padding: 20px!important;
+
+}
+
+}
+
+
+  }
+
+}
+
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  article{
+
+    width:60%;
+    margin:0 auto;
+
+  }
+  text-align:center;
+
+  .tablinks {
+
+    background-color: inherit;
+    font-family: "Waiting for the Sunrise" !important;
+    font-size: 30px;
+    color: #cb410b !important;
+    border: none!important;
+    outline: none!important;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    &:hover {
+   
+      font-weight:bolder;
+    }
+    &.active {
+      background-color: #ccc;
+    }
+  }
+
+}
+
+
+  

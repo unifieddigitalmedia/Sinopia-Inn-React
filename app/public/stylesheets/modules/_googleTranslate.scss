@@ -1,0 +1,45 @@
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0px;
+}
+
+.goog-te-combo {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #687074;
+  cursor: pointer;
+  width: 75px;
+  margin: 0px 0px;
+}
+
+.dup-goog-te-combo {
+  display: none;
+}
+
+
+#google_translate_element {
+  width: 300px;
+  float: right;
+  text-align: right;
+  display: block;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+#goog-gt-tt, .goog-tooltip skiptranslate {
+  display: none !important;
+  top: 0px !important;
+}
+
+.activity-root, .status-message, .started-activity-container {
+  display: hide !important;
+}

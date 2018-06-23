@@ -1,0 +1,153 @@
+.infowindow{
+
+ width: 512px!important;
+border:red thin solid!important;
+  .mdl-card__title {
+
+    width: 512px!important;
+    color: #fff;
+    height: 172px;
+  
+  }
+
+
+
+}
+
+#timer{
+  
+   color:#cb410b!important;
+   font-family: 'Waiting for the Sunrise';
+   font-size:100%;
+}
+
+
+.mdl-layout__content {
+
+
+.contact-container-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #535353;
+.mdl-textfield, .mdl-button {
+    width: 100%;
+  }
+
+}
+.infowindowDescription{
+  
+  font-family:Waiting for the Sunrise;
+}
+.mdl-list__item-primary-content,.optionsContainer span{
+
+overflow:hidden!important;
+-ms-overflow-style:none;
+font-weight:200;
+ color:#535353;
+
+ .mdl-textfield__input{
+
+width:100%!important;
+
+ }
+
+}
+
+
+ul {
+
+padding-left:0;
+
+li {
+  
+ list-style-type:none;
+
+ 
+
+}
+
+}
+
+.reservation__content,.demo-content, table {
+
+width:100%!important;
+
+
+
+thead tr th {
+ 
+color:black;
+
+
+}
+
+}
+
+
+
+.mdl-list__item-icon{
+  
+ color:#cb410b!important;
+
+}
+
+
+
+
+.btnLink {
+
+  float:right;
+  color:#cb410b!important ;
+  cursor: pointer;
+  font-family: 'Waiting for the Sunrise';
+
+  &:hover{
+
+font-weight:bolder;
+
+  }
+
+}
+
+
+.placelistitem {
+
+border-bottom:thin solid #eeeeee!important;
+padding:20px;
+
+
+}
+
+
+
+
+}
+
+
+.tripConfirm , .paymentBtn  {
+  
+ width:100%;
+ color:#ffffff!important;
+ cursor:pointer;
+ font-family: 'Waiting for the Sunrise';
+      &:hover{
+        color: #eedc00!important ;
+        font-weight:bolder;
+
+
+      }
+
+}
+
+
+.paymentBtn {
+
+ font-family: 'Waiting for the Sunrise';
+ 
+  }
+
+.w3-section{
+  
+  margin:0 auto!important;
+}

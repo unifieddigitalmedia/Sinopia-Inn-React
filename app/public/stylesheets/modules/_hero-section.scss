@@ -1,0 +1,234 @@
+
+.hero-section {
+  position: relative;
+  
+
+  
+
+img{
+  
+  width: 100%!important;
+
+
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: -15px;
+  width: 350px;
+  transform: translate(10%, -35%);
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+  padding: 10px;
+
+
+  .tagline{
+
+   font-family: "Waiting for the Sunrise" !important;
+
+}
+
+ @include respond-to($tablet-portrait) {
+
+ height:50%; left: -35px;
+
+ }
+
+
+ @include respond-to( $phone) {
+
+ width:100%;
+
+ }
+
+  .hero-text-container{
+
+    background-color:black;
+    border:$secondary-color dotted thin;
+    padding:20px;
+    height:100%;
+
+     @include respond-to($tablet-portrait) {
+
+		 height:80%;
+		  padding:10px;
+
+
+      }
+
+       @include respond-to( $phone) {
+
+ width:80%;
+ margin:0 auto;
+ padding-top: 0px!important;
+
+ }
+   
+h1 {
+    color: $secondary-color;
+    font-size: 300%;
+    padding-bottom: 10px;
+    font-family: "FontspringLight";
+
+
+    @include respond-to($tablet-portrait) {
+
+		 font-size: 100%;
+		  padding: 0px!important;
+		  margin:0px;
+
+      }
+  }
+  p {
+    color: white;
+    border-top:$secondary-color thin dotted;
+    padding-top: 5px;
+    font-size: 100%;
+    font-family: "FontspringLight";
+
+      @include respond-to($tablet-portrait) {
+
+		 font-size: 70%;
+		 line-height:12px!important
+
+      }
+
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Waiting for the Sunrise';
+    color: $primary-color ;
+  }
+
+}
+
+ 
+}
+
+
+}
+
+
+.hero-image-index-blog {
+  background-image: url("../../images/hero-images/homepage.jpg");
+ 
+}
+
+.hero-image-index {
+  background-image: url("../images/hero-images/homepage.jpg");
+   
+}
+
+.hero-image-villa {
+  background-image: url("../images/hero-images/homepage1.jpg");
+  height:560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-room {
+  background-image: url("../images/hero-images/homepage2.jpg");
+   
+}
+
+.hero-image-travel {
+  background-image: url("../images/hero-images/homepage3.jpg");
+    
+}
+
+.hero-image-rewards {
+  background-image: url("../images/hero-images/homepage5.jpg");
+    
+}
+
+.hero-image-directions {
+  background-image: url("../images/hero-images/homepage6.jpg");
+    
+}
+
+.hero-image-mobile {
+  height: auto !important;
+  position: relative;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 );
+
+
+
+
+
+}
+
+
+
+.hero-text-mobile {
+  position: relative;
+  top: 0%;
+  width: 450px;
+  color: white;
+  padding: 10px;
+  .bookingform-rewards-heading {
+    color: white;
+    font-size: 90% !important;
+    font-weight: 200;
+  }
+  .bookingform-rewards-heading1 {
+    font-size: 110%;
+    color: #3b0053;
+    font-family: 'Waiting for the Sunrise';
+    font-weight: 900;
+  }
+  .bookingform-rewards-cta {
+    color: #eedc00;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: 900 !important;
+    float: right;
+    font-size: 150% !important;
+    text-decoration: none;
+    &:hover {
+      color: #eedc00;
+      text-decoration: underline;
+    }
+  }
+  .bookingform-subtext {
+    color: black;
+    line-height: none;
+    font-size: 100%;
+  }
+}
+
+
+  .icon-row {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  line-height: 2px;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 );
+  .side_menu_title_para-res {
+    text-align: center;
+    border-bottom: #cb410b thin solid;
+    .service_icon-res-heading {
+      color: #eedc00;
+    }
+    i {
+      color: #eedc00 !important;
+    }
+    .service_icon-res-text {
+      font-size: 80%;
+      font-weight: 100 !important;
+      color: #ffffff;
+    }
+  }
+}

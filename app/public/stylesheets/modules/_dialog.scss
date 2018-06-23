@@ -1,0 +1,25 @@
+.mdl-dialog__content {
+  text-align: center;
+  .smalLogo {
+    margin: 0 auto;
+  }
+  .closeDialog {
+    cursor: pointer;
+    float: right;
+  }
+}
+
+.filterTextbox {
+  color: black;
+}
+
+.dialogButtonContainer button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #cb410b !important;
+  font-family: 'Waiting for the Sunrise';
+  &:hover, &:focus {
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}

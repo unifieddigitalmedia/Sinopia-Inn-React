@@ -1,0 +1,594 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A portfolio template that uses Material Design Lite.">
+  <meta name="author" content="Machel Slack">
+
+
+
+  <meta property="fb:app_id" content="619443938242215" />
+  <meta property="og:url" content="http://www.sinopiainn.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sinopia Inn - Self Catering Holiday Villa in Portland Jamaica | Home" />
+  <meta property="og:description" content="Self Catering Holiday Villa in Portland Jamaica" />
+  <meta property="og:image" content="http://www.sinopiainn.com/images/homepage1.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Sinopia Inn - Holiday Villa in Portland Jamaica | Booking Confirmation </title>
+  <link rel="stylesheet" href="stylesheets/mld/material.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/mld/dialog-polyfill.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/booking-confirmation.css">
+  <link rel="stylesheet" href="jquery/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+
+</head>
+
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="(document.getElementById('mySidenav').style.width = '0',document.getElementById('main').style.marginRight = '0')">&times;</a>
+    <a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en">English </a>
+    <a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN">Chinese</a>
+    <a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr">French</a>
+    <a href="#googtrans(en|de)" class="lang-es lang-select" data-lang="de">German</a>
+    <a href="#googtrans(en|it)" class="lang-es lang-select" data-lang="it">Italian</a>
+    <a href="#googtrans(en|ru)" class="lang-es lang-select" data-lang="ru">Russian</a>
+    <a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es"> Spanish </a>
+    <a href="#googtrans(en|ja)" class="lang-es lang-select" data-lang="ja">Japanaesse</a>
+
+
+  </div>
+
+  <section id="main">
+
+
+    <div id="bookingNav" class="overlay">
+
+
+
+
+      <div class="overlay-content">
+
+        <span class="closebtn closedateChooser" onclick="document.getElementById('bookingNav').style.height = '0%'">&times;</span>
+        <form action="reservation.html" method="GET" id="reservationform" class="overlayReservationform resForm">
+
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+            <i class="mdl-textfield__icon material-icons">date_range</i>
+
+            <input class="mdl-textfield__input fromdate" type="text" id="fromdate" name="from"> </input>
+
+            <label class="mdl-textfield__label" for="fromdate">CHECK IN DATE </label>
+
+          </div>
+
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+            <i class="mdl-textfield__icon material-icons">date_range</i>
+
+            <input class="mdl-textfield__input todate" type="text" id="todate" name="todate"></input>
+
+            <label class="mdl-textfield__label" for="todate">CHECK OUT DATE </label>
+
+          </div>
+
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+            <i class="mdl-textfield__icon material-icons">card_giftcard</i>
+
+            <input class="mdl-textfield__input promo" type="text" id="promo" name="promo">
+
+            </input>
+
+            <label class="mdl-textfield__label" for="promo">PROMO</label>
+
+          </div>
+
+
+
+          <button class="mdl-button mdl-js-button mdl-button--raised " type="submit">CHECK AVAILABILITY</button>
+
+        </form>
+
+
+
+      </div>
+
+    </div>
+
+    <div id="privacyModal" class="overlay modal-footer-panel">
+
+      <div class="overlay-content">
+        <div>
+          <span class="closebtn" onclick="document.getElementById('privacyModal').style.height = '0%'" id="closeFooter">&times;</span>
+          <p>This website uses cookies. We use cookies to help make this website better, to improve our services and for advertising
+            purposes. You can learn more about our use of cookies and change your browser settings in order to avoid cookies
+            by clicking
+            <a href="privacy-and-cookies-statement.html"> here. </a> Would you like to continue ?
+            <label>
+              <input type="radio" name="optradio" class="cookies-yes" value="yes">&nbsp;Yes</label>&nbsp;
+            <label>
+              <input type="radio" name="optradio" class="cookies-no" value="no">&nbsp;No</label>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="android-header">
+
+      <div class="mdl-layout__header-row">
+
+
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+
+
+        <ul class="topnavbar">
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons" onclick="document.getElementById('mySidenav').style.width = '300px',document.getElementById('main').style.marginRight = '300px'">public</i>
+
+            </span>
+          </li>
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons" onclick="window.location.assign('contacts.html')">perm_phone_msg</i>
+            </span>
+          </li>
+          <li class="mdl-list__item dateChooser">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons " onclick="document.getElementById('bookingNav').style.height = '100%'">date_range</i>
+
+            </span>
+          </li>
+
+
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons show-modal">perm_identity</i>
+
+            </span>
+          </li>
+
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons">shopping_basket</i>
+
+            </span>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+    </div>
+
+    <div class="mdl-js-layout mdl-layout--fixed-header">
+
+
+
+      <header class="mdl-layout__header mdl-layout__header--waterfall  ">
+
+        <div class="mdl-layout__header-row portfolio-logo-row">
+          <span class="mdl-layout__title">
+            <a href="../index.html">
+              <div class="portfolio-logo"></div>
+            </a>
+
+          </span>
+        </div>
+
+
+        <ul class="mdl-layout__header-row portfolio-navigation-row mdl-layout__tab-bar">
+
+
+          <li>
+            <a class="mdl-layout__tab" href="../index.html">HOME</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="index.html#breakfast">BREAKFAST</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="rooms.html">ROOMS AND AMENITIES</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="travel-and-adventure.html">TRAVEL AND ADVENTURE</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="portland-at-your-feet.html">PORTLAND AT YOUR FEET</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="getting-here.html">GETTING HERE</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" href="reservation.html">RESERVATION</a>
+            <span class="menudivider">| </span>
+          </li>
+          <!-- <li>
+            <a class="mdl-layout__tab" href="mobile-app.html">MOBILE APP</a>
+            <span class="menudivider">| </span>
+          </li> -->
+          <!--<li>
+            <a class="mdl-layout__tab" href="blog/index.html">BLOG</a>
+            <span class="menudivider">| </span>
+          </li>
+          <li>
+            <a class="mdl-layout__tab" data-id="shop" href="shop/index.html">SHOP</a>
+
+          </li>-->
+
+        </ul>
+
+
+
+
+      </header>
+
+      <section class="sub-menu-wrapper">
+
+        <ul class="mdl-layout__header-row mdl-layout__tab-bar menu" id="shop">
+
+
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="mens">MENS</a>
+          </li>
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="womens">WOMENS</a>
+          </li>
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="beauty">HEALTH AND BEAUTY</a>
+          </li>
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="food">FOOD</a>
+          </li>
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="gifts">GIFTS AND SOUVENIRS</a>
+          </li>
+          <li>
+            <a class="mdl-layout__tab submenu" data-id="jewellery">JEWELLERY AND ACCESSORIES</a>
+          </li>
+
+        </ul>
+
+
+        <section class="sub-menu-menu" id="sub-menu-menu">
+
+
+          <div class="mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+
+              <ul class="sub-menu-menu-menu mens" id="mens">
+
+                <li data-sub-catergory="new" data-category="mens" id="new" class="listHeader"> Just in </li>
+                <li data-sub-catergory="best" data-category="mens" id="best" class="listHeader">Bestsellers</li>
+
+                <li data-sub-catergory="all" data-category="mens" id="mens" class="listHeader"> All Clothing</li>
+                <li data-sub-catergory="beach" data-category="mens" id="mens"> Beachwear & swimwear</li>
+
+              </ul>
+
+              <ul class="sub-menu-menu-menu womens" id="womens">
+                <li data-sub-catergory="new" data-category="womens" id="new" class="listHeader"> Just in </li>
+                <li data-sub-catergory="best" data-category="womens" id="best" class="listHeader">Bestsellers</li>
+                <li data-sub-catergory="all" data-category="womens" id="womens" class="listHeader"> All Clothing</li>
+                <li data-sub-catergory="beach" data-category="womens" id="womens"> Beachwear & swimwear</li>
+
+
+
+              </ul>
+              <ul class="sub-menu-menu-menu beauty" id="beauty">
+                <li data-sub-catergory="new" data-category="beauty" id="new" class="listHeader"> Just in </li>
+                <li data-sub-catergory="best" data-category="beauty" id="best" class="listHeader">Bestsellers</li>
+                <li data-sub-catergory="beauty" data-category="beauty" id="beauty" class="listHeader">All Bath and Body</li>
+                <li data-sub-catergory="body" data-category="beauty" id="beauty">Body</li>
+                <li data-sub-catergory="bath" data-category="beauty" id="beauty">Bath & Shower</li>
+                <li data-sub-catergory="hair" data-category="beauty" id="beauty">Haircare</li>
+
+
+
+              </ul>
+
+              <ul class="sub-menu-menu-menu food" id="food">
+                <li data-sub-catergory="new" data-category="food" id="new" class="listHeader"> Just in </li>
+                <li data-sub-catergory="best" data-category="food" id="best" class="listHeader">Bestsellers</li>
+                <li data-sub-catergory="drinks" data-category="food" id="food" class="listHeader"> All Wine And Spirts</li>
+                <li data-sub-catergory="wines" data-category="food" id="food"> Wines</li>
+                <li data-sub-catergory="spirits" data-category="food" id="food"> Spirits</li>
+                <li data-sub-catergory="beer" data-category="food" id="food"> Beer</li>
+
+
+
+              </ul>
+
+              <ul class="sub-menu-menu-menu gifts" id="gifts">
+
+                <li class="listHeader"> by Occassion</li>
+                <li data-sub-catergory="wedding" data-category="gifts" id="gifts"> Wedding</li>
+                <li data-sub-catergory="engagement" data-category="gifts" id="gifts"> Engagement</li>
+                <li data-sub-catergory="aniversary" data-category="gifts" id="gifts"> Aniversary</li>
+                <li data-sub-catergory="home" data-category="gifts" id="gifts"> New Home</li>
+
+
+              </ul>
+
+              <ul class="sub-menu-menu-menu gifts" id="gifts">
+
+                <li data-sub-catergory="souvenirs" data-category="gifts" id="gifts" class="listHeader"> Souvenirs</li>
+
+
+
+              </ul>
+
+              <ul class="sub-menu-menu-menu jewellery" id="jewellery">
+                <li data-sub-catergory="new" data-category="jewellery" id="new" class="listHeader"> Just in </li>
+                <li data-sub-catergory="best" data-category="jewellery" id="best" class="listHeader">Bestsellers</li>
+                <li data-sub-catergory="all" data-category="jewellery" id="jewellery" class="listHeader"> All Accessories</li>
+                <li data-sub-catergory="braclets" data-category="jewellery" id="jewellery"> Braclets</li>
+                <li data-sub-catergory="necklaces" data-category="jewellery" id="jewellery"> Necklaces</li>
+                <li data-sub-catergory="pendants" data-category="jewellery" id="jewellery"> Pendants</li>
+                <li data-sub-catergory="rings" data-category="jewellery" id="jewellery"> Rings</li>
+
+
+
+              </ul>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-phone mdl-cell--4-col-phone">
+
+
+
+            </div>
+
+          </div>
+
+
+        </section>
+
+      </section>
+
+      <main class="mdl-layout__content">
+
+
+        <div class="hero-section">
+
+
+
+          <form action="reservation.html" method="GET" id="reservationform" class="reservationform resForm">
+            <ul class="formlist">
+
+              <li>
+                <i class="mdl-textfield__icon material-icons">date_range</i>
+                <input type="text" id="fromdatePage" class="fromdate" name="from" placeholder="CHECK IN DATE"> </input>
+              </li>
+              <li>
+                <i class="mdl-textfield__icon material-icons">date_range</i>
+                <input type="text" id="todatePage" class="todate" name="todate" placeholder="CHECK OUT DATE"></input>
+              </li>
+              <li>
+                <i class="mdl-textfield__icon material-icons">card_giftcard</i>
+                <input type="text" id="promo" class="promo" name="promo" placeholder="PROMO CODE"></input>
+              </li>
+              <li>
+                <button type="submit">CHECK AVAILABILITY</button>
+                </a>
+              </li>
+
+            </ul>
+          </form>
+          <div class="hero-text">
+            <div class="hero-text-container">
+              <h1>WELCOME</h1>
+              <p>Sinopia Inn would like to welcome you to its rustic hideaway. Here you can experience rustic views with lush
+                green hills and skies streaked with colour - not to mention amazing sunsets that will have you feeling the
+                vibes to just chill.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="app-confirmation">
+
+
+        </div>
+
+
+
+        <footer class="mdl-mega-footer">
+
+          <div class="mdl-mega-footer__middle-section">
+
+            <div class="content-grid mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h4 class="mdl-mega-footer__heading">CONNECT WITH SINOPIA INN </h4>
+                <ul class="mdl-mega-footer__link-list">
+                  <li>
+                    <img src="images/social-media/facebook.png" style="cursor:pointer;" id="facebook">
+                    <img src="images/social-media/pin.png" style="cursor:pointer;" id="pininterest">
+                    <img src="images/social-media/tube.png" id="youtube">
+                    <img src="images/social-media/twitter.png" style="cursor:pointer;" id="twitter">
+                    <img src="images/social-media/linkedIn.png" id="linkedin">
+                    <img src="images/social-media/mail.png" style="cursor:pointer;" id="mail">
+                  </li>
+                  <li>
+                    <!--<i class="material-icons">stay_primary_portrait</i>
+                    <i class="material-icons">tablet_mac</i> &nbsp;GET THE MOBILE APP --></li>
+                  <li>
+                    <input class="download_buttons" src="images/buttons/google_button.png" type="image" />
+                    <input class="download_buttons" src="images/buttons/apple_button.png" type="image" />
+                  </li>
+
+                </ul>
+
+                <img src='images/logo.png' width="300" height="70" />
+              </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet ">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h4 class="mdl-mega-footer__heading">MORE LINKS</h4>
+                <ul class="mdl-mega-footer__link-list">
+                  <li>
+                    <a href="contacts.html">CONTACTS</a>
+                  </li>
+                  <li>
+                    <a href="blog/index.html">RECENT BLOG POSTS </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet ">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h4 class="mdl-mega-footer__heading">STAY IN TOUCH</h4>
+                Missed us when we’re away? Add your email below so we can update you on news and offers from us at Sinopia Inn.
+                <form method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" role="form">
+
+
+
+
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="email" pattern="[a-z,A-Z,0-9,\.]{1,64}@[a-z,A-Z,0-9]{1,64}\.([a-z,A-Z]{3,64}|[a-z,A-Z]{2,64}\.[a-z,A-Z]{2,64})"
+                      id="subscribers_email" name="subscribers_email" />
+                    <label class="mdl-textfield__label" for="subscribers_email">Please enter your email address</label>
+                    <span class="mdl-textfield__error">Please check your email!</span>
+                  </div>
+
+
+
+
+
+                </form>
+
+                <span>For more information on how we use your personal details please refer to our Privacy Policy and Cookie Policy
+
+                </span>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+    </div>
+
+
+
+    </footer>
+
+    <dialog class="mdl-dialog" id="app-check-in">
+      <div class="mdl-dialog__content">
+
+        <span class="closeDialog">&times;</span>
+
+        <h3> WELCOME </h3>
+
+        <img src="images/logoSmall.jpg" width="80" height="70" className="smalLogo" />
+
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-focused">
+            <input class="mdl-textfield__input" type="text" id="Username">
+            <label class="mdl-textfield__label" for="Username">Username</label>
+          </div>
+          <br></br>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="Password" />
+            <label class="mdl-textfield__label" for="Password">Password</label>
+          </div>
+        </form>
+
+
+
+      </div>
+      <div class="mdl-dialog__actions mdl-dialog__actions--full-width dialogButtonContainer">
+        <button type="button" class="mdl-button">Check in</button>
+
+        <br></br>
+
+        <button type="button" class="mdl-button ">Forgot your password</button>
+      </div>
+    </dialog>
+
+
+
+  </section>
+
+  </main>
+
+
+
+  </div>
+
+
+
+
+  <script src="jquery/jquery-1.12.4.js"></script>
+  <script src="jquery/ui/1.12.1/jquery-ui.js"></script>
+  <script async src="javascripts/mld/1.3.0/material.min.js"></script>
+  <script async src="javascripts/mld/dialog-polyfill.js"></script>
+  <script async src="javascripts/main-min.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)    
+}, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-105709833-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
+    }
+
+  </script>
+  <script>
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
+    }
+
+  </script>
+  <script>     (function (i, s, o, g, r, a, m) {       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {         (i[r].q = i[r].q || []).push(arguments)       }, i[r].l = 1 * new Date(); a = s.createElement(o),         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');      ga('create', 'UA-105709833-1', 'auto');     ga('send', 'pageview');    </script></body>
+
+</html>

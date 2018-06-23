@@ -1,0 +1,18 @@
+.demo-list-three {
+  text-align: left;
+  @extend medium;
+  li span {
+    height:auto!important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;
+    .mdl-list__item-avatar {
+      color: #cb410b;
+      background-color:transparent;
+    }
+    .amenitiesAvatar{
+
+     color:white!important;
+      background-color:#cb410b!important;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+main{
+
+  width:80%;
+  margin:0 auto;
+
+}
+
+table th{
+	
+	font-size:125%!important;
+
+}
+
+.mdl-layout__content {
+
+
+width:100%;
+
+}
+
+
+.mdl-data-table {
+
+
+width:100%;
+
+}
+
+
+.demo-content {
+
+
+width:100%;
+  position: relative; 
+  margin:0 auto;
+  padding:40px!important;
+ 
+}

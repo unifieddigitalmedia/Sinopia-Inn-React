@@ -1,0 +1,35 @@
+
+.mdl-layout__tab-bar {
+
+  text-transform: uppercase;
+  height: 45px!important;
+  width: 97%!important;
+  overflow-x:hidden;
+  -ms-overflow-style:none;
+  .mdl-layout__tab {
+    
+  font-family: FontspringRegular!important;
+  width:500px;
+    display: table-cell;
+    vertical-align: middle;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .menudivider {
+      color: #cb410b;
+    }
+    li{
+    list-style-type: none; 
+    padding:0px;
+    line-height: 45px;
+    }
+
+  @include respond-to($tablet-portrait) {
+
+      width: 87%!important;
+
+    }
+
+
+}

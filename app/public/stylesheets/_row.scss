@@ -1,0 +1,90 @@
+.row2{
+
+ background-color:#f9f8f8!important;
+
+}
+
+ .table {
+  display: table;
+  width: 100%;
+  @include respond-to($tablet-portrait) {
+    display: block !important;
+  }
+  .table-cell {
+    display: table-cell;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 50px;
+    width: 50%;
+
+ @include respond-to($tablet-portrait) {
+    display: block !important;
+    text-align: center !important;
+    display: inline-block !important;
+    width: 100%;
+    padding: 0px;
+  }
+
+
+.btn-link {
+  font-weight: 400;
+  color: #337ab7;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 150%;
+  font-family: "Waiting for the Sunrise";
+  color: #cb410b;
+  &.active, &:active, &[disabled] {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 150%;
+    font-family: "Waiting for the Sunrise";
+    color: #cb410b;
+  }
+  border-color: transparent;
+  &:active, &:focus, &:hover {
+    border-color: transparent;
+    outline:none;
+  }
+  &:focus, &:hover {
+    font-weight: bolder!important;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+     outline:none;
+  }
+}
+
+
+a {
+
+      color:#cb410b;
+      text-decoration:none;
+      font-family: "Waiting for the Sunrise" ;
+      font-size:150%;
+      cursor:pointer;
+      &:hover {
+          font-weight:900 ;
+        }
+
+    }
+
+    p {
+
+          font-size:14px; text-align: center; color:#535353;font-weight:100;
+
+      }
+
+
+  h3 {  border-bottom:$primary-color thin dotted;
+        padding-bottom:30px;
+        font-size:350%;
+        font-weight:100; 
+
+      }
+
+
+}

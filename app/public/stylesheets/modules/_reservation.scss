@@ -1,0 +1,126 @@
+.mdl-layout__content, table, ul {
+  width: 100%;
+}
+.demo-content {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mdl-cell--3-col {
+  padding: 0px !important;
+}
+
+
+
+.mdl-list__item {
+  text-align: left !important;
+  padding: 20px !important;
+}
+
+.mdl-list__item-text-body {
+  height: auto !important;
+}
+
+.mdl-list__item-secondary-content:hover, .removeBtn:hover {
+  color: #cb410b !important;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.slide-fade li {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  &.show {
+    opacity: 1;
+  }
+}
+
+.responsiveTable {
+  overflow-x: 'auto';
+}
+
+.modalReservationError {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+
+    h1 {
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    font-weight: 200;
+  }
+  i {
+    animation: ripple 1.5s ease-out;
+    animation-iteration-count: infinite;
+    font-size: 160px !important;
+  }
+
+
+}
+
+.innermodalReservation {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progressIcons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -4em;
+  width: 200px;
+  height: 200px;
+}
+
+.closeReservation {
+  color: #cb410b !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 100px !important;
+  font-weight: bold;
+  &:hover, &:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+
+.mdl-textfield__icon {
+   
+    width: 48px;
+    text-align: center;
+    position: absolute;
+    line-height: 1.5;
+    ~ * {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+}
+
+}
+
+
+.reservation_mdl-textfield__icon {
+  
+
+   color: #cb410b !important;
+
+ line-height: 2.5!important;
+}
+
+

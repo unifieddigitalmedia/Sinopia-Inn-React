@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Waiting for the Sunrise';
+  src: url(../fonts/WaitingfortheSunrise.ttf);
+}
+
+@font-face {
+font-family: Fontspring;
+src: url(../fonts/Fontspring-DEMO-cera-medium.otf);
+}
+
+@font-face {
+font-family: FontspringLight;
+src: url(../fonts/Fontspring-DEMO-cera-light.otf);
+}
+
+@font-face {
+font-family: FontspringRegular;
+src: url(../fonts/Fontspring-DEMO-cera-regular.otf);
+}
+
+
+
+$primary-color: #cb410b;
+$secondary-color: #aa9d2e;
+$tertiary-color: #eedc00;
+$background-color-black: #000000;
+$font-color-white: #ffffff;
+
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 880px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: '(min--moz-device-pixel-ratio: 1.5), 
+                    (-o-min-device-pixel-ratio: 3/2), 
+                    (-webkit-min-device-pixel-ratio: 1.5), 
+                    (min-device-pixel-ratio: 1.5), 
+                    (min-resolution: 144dpi), 
+                    (min-resolution: 1.5dppx)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@import "modules/_payment.scss";
+@import "modules/_reservation.scss";
+@import "modules/_trip.scss";
+@import "modules/_reservationModal.scss";
+@import "modules/_googleTranslate.scss";
+@import "modules/_sideNav.scss";
+@import "modules/_reservationformOverlay.scss";
+@import "modules/_iconBar.scss";
+@import "modules/_logoRow.scss";
+@import "modules/_tabbar.scss";
+@import "modules/_shopMenu.scss";
+@import "modules/_layout.scss";
+@import "modules/_hero-section.scss";
+@import "modules/_stickyReservationform.scss";
+@import "modules/_row.scss";
+@import "modules/_slides.scss";
+@import "modules/_threeLinelist.scss";
+@import "modules/_testimonials.scss";
+@import "modules/_footer.scss";
+@import "modules/_tabs.scss";
+@import "modules/_cards.scss";
+@import "modules/_dialog.scss";
+@import "modules/_rooms.scss";
+
+
+
+

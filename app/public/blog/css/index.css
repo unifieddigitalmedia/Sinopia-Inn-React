@@ -1,0 +1,644 @@
+@font-face {
+  font-family: 'Waiting for the Sunrise';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Waiting for the Sunrise'), local('WaitingfortheSunrise'), url(http://fonts.gstatic.com/s/waitingforthesunrise/v7/eNfH7kLpF1PZWpsetF-ha6dq3j6WwEb-fqwg9dMLRYwC1LhKU8qFLLahJuQDJSaO.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+@font-face {
+font-family: FontspringMedium;
+src: url(../../css/Fonts/Fontspring-DEMO-cera-medium.otf);
+}
+
+@font-face {
+font-family: FontspringLight;
+src: url(../../css/Fonts/Fontspring-DEMO-cera-light.otf);
+}
+
+@font-face {
+font-family: FontspringRegular;
+src: url(../../css/Fonts/Fontspring-DEMO-cera-regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body , html {
+  
+  font-weight: 200!important;
+  font-size:15px!important;
+ 
+
+
+   /*
+background: #29b66a; 
+background: -moz-linear-gradient(45deg, #29b66a 0%, #f0f1b8 51%, #f0f1b8 51%, #f0f1b8 51%, #f06f45 100%); 
+background: -webkit-linear-gradient(45deg, #29b66a 0%,#f0f1b8 51%,#f0f1b8 51%,#f0f1b8 51%,#f06f45 100%); 
+background: linear-gradient(45deg, #29b66a 0%,#f0f1b8 51%,#f0f1b8 51%,#f0f1b8 51%,#f06f45 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b66a', endColorstr='#f06f45',GradientType=1 );*/
+
+}
+
+h3{
+
+font-family: 'FontspringMedium';
+
+}
+
+a {
+
+font-family: 'Waiting for the Sunrise';
+font-size:150%;
+
+}
+
+
+
+a:hover {
+
+ text-decoration:none!important;
+}
+
+a:hover h3, a:hover span {
+
+ 
+  color:#cb410b!important;
+
+}
+
+
+p {
+
+color:#cb410b;
+
+}
+
+.location{
+
+  color:#a7a6a6;
+}
+
+
+.mainrowCol{
+
+display: table;
+width: 100%; 
+
+}
+
+.main-row-Col-Left {
+
+display: table-cell;
+width:85%;
+
+
+}
+
+
+.main-row-Col-Right {
+
+display: table-cell;
+width:15%;
+vertical-align: middle;
+overflow: hidden;
+text-align: center;
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-row-Col-Left, .main-row-Col-Right { 
+        display: block!important;
+        width: 100%!important;
+    
+    }
+}
+
+h6{
+
+  top:0!important;
+}
+
+
+h1,h4 {
+
+font-weight:100!important;margin: 35px 20px!important ;
+
+}
+
+span {
+
+color: #cb410b;
+
+}
+
+.container{
+
+  width:95%!important;
+  margin:0 auto!important;
+
+}
+
+.toprow {
+
+ 
+  display:table!important;
+  top:45px;
+}
+.topnav-top-header{ 
+
+
+  text-align:center;
+  padding:30px;
+  font-family: 'Waiting for the Sunrise';
+  font-weight:bolder; 
+  font-size:200%;
+  background-color:#f9f8f8;
+ 
+
+
+}
+
+.logo{width:100%; height:90px!important;}
+
+.topnav-top-header-table-cell {float: none;display: table-cell;vertical-align: middle; text-align: center;}
+
+.menudivider {
+
+  color: #cb410b!important;
+
+
+}
+
+
+.topnav li span { 
+ display: table-cell;
+ vertical-align:middle; 
+}
+
+ul.topnav , .bottom-topnav{
+
+  text-align:center;
+  height:45px;
+  width: auto;
+  padding: 0px;
+  list-style: none;
+  display: table;
+  margin: 0 auto!important;
+
+}
+
+
+ul.topnav li,ul.bottomnav li {
+  width:auto;
+  display: table-cell;
+  text-align: center;
+  margin: 0;
+  vertical-align:middle; 
+  padding:0px;
+
+}
+
+
+
+ul.topnav li a ,.bottomnav li a{
+  float: left;
+  font-weight:50;
+  color: #000000; 
+  font-family:'FontspringLight' ;
+  font-weight:50!important;
+  font-size:13px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 25px;
+  line-height:15px!important;
+
+
+}
+ul.topnav .current a, ul.topnav li:hover , ul.topnav li:hover > a  {
+  color: #fff;
+  text-decoration: none;
+  cursor:pointer;
+  color: #cb410b;
+  
+}
+
+/* APPLIES THE ACTIVE STATE */
+ul.topnav .current a   {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #330000;
+  background: #bb0000;
+   font-weight:bold;
+}
+
+ul.topnav  ul {
+  display: none;
+  text-align:left;
+
+  
+}
+
+ul.topnav li:hover > ul {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  margin: 10px 0 0 0;
+  left:0;
+  background-color:#cb410b;
+
+}
+ul.topnav li:hover > ul li a {
+  
+  line-height: 45px!important;
+  color: #ffffff;
+  font-weight:bold;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 30px 0 0;
+ 
+  vertical-align: middle;
+}
+
+ul.topnav li:hover > ul li a:hover {
+
+  text-decoration: none;
+  text-shadow: none;
+  font-weight:bold;
+  
+}
+
+nav.topnav{
+
+  width:100%;
+   background-color:#cb410b;
+}
+
+.bottom-topnav{
+ width:100%;
+ background-color:#000000;
+}
+
+.bottomnav{
+
+
+  bottom:0;
+  text-align:center;
+  height:100px;
+  width: auto;
+  padding: 100px;
+  list-style: none;
+  display: table;
+  margin: 0 auto!important;
+  background-color:#000000;
+
+}
+
+.bottomnav i {
+
+font-size:400%;
+
+}
+
+.bottomnav li a{
+
+  color:white!important;
+
+
+}
+
+.facebook , .facebook span{
+
+color: #3b5998;
+
+}
+
+.facebook span , .instagram span , .youtube span , .twitter span {
+
+font-family: 'Waiting for the Sunrise';
+
+}
+
+.facebook:hover{
+
+ opacity: .7;
+
+}
+.instagram , .instagram span{
+
+color: #e95950; 
+
+}
+.instagram:hover{
+
+ opacity: .7;
+
+}
+.youtube , .youtube span {
+
+color: #bb0000;
+
+}
+.youtube:hover{
+
+ opacity: .7;
+
+}
+
+.twitter , .twitter span{
+
+color: #1dcaff;
+
+}
+.twitter:hover{
+
+ opacity: .7;
+
+}
+
+.menu_icon_home, .menu_icon_travel, .menu_icon_health , .menu_icon_vacation , .menu_icon_contact , .menu_icon_more {
+
+  text-decoration: none!important;
+  position: relative!important;
+  vertical-align:middle!important;
+
+}
+
+.menu_icon_home:after, .menu_icon_travel:after, .menu_icon_health:after , .menu_icon_vacation:after , .menu_icon_contact:after , .menu_icon_more:after {
+ content: "\00a0";font-family: 'Material Icons'!important;
+  
+}
+
+
+.menu_icon_home:before {
+
+  content: "local_airport";font-family: 'Material Icons'!important;
+
+}
+
+.menu_icon_travel:before {
+
+  content: "public";font-family: 'Material Icons'!important;
+
+}
+
+
+.menu_icon_health:before {
+
+  content: "restaurant";font-family: 'Material Icons'!important;
+
+}
+
+
+.menu_icon_vacation:before {
+
+  content: "shopping_cart";font-family: 'Material Icons'!important;
+
+}
+
+
+.menu_icon_contact:before {
+
+  content: "call";font-family: 'Material Icons'!important;
+
+}
+
+
+.menu_icon_more:before {
+
+  content: "apps";font-family: 'Material Icons'!important;
+
+}
+
+
+.menudivider{
+
+  color: white;
+  line-height: 100% !important;
+
+}
+
+.uppertopnav{
+
+border-top:thin solid #cb410b;
+
+}
+
+.innertopnav  {
+
+width:100%!important;padding:20px;
+
+}
+
+.innertopnav:first-child a{
+text-align: left!important;
+
+
+
+
+}
+.slidebutton{
+
+  float:right;
+}
+
+
+
+.carousel {
+
+overflow: hidden;
+
+}
+
+.recipes-carousel-inner {
+
+width: 150%;
+
+left: -25%;
+
+}
+
+.carousel-control.left, .carousel-control.right {
+
+background-color:#000000!important;
+
+width: 25%;
+
+}
+
+
+.recipes-carousel-inner > .item.next,
+.recipes-carousel-inner > .item.active.right {
+
+left: 0;
+-webkit-transform: translate3d(33%, 0, 0);
+transform: translate3d(33%, 0, 0);
+
+}
+
+
+.recipes-carousel-inner > .item.prev,
+.recipes-carousel-inner > .item.active.left {
+
+left: 0;
+
+-webkit-transform: translate3d(-33%, 0, 0);
+transform: translate3d(-33%, 0, 0);
+
+}
+
+.videoPlayer {
+
+
+  width:105%;
+  height:499px;
+
+
+
+}
+
+.photo2{
+
+background: url('../images/clouds.jpg');
+
+}
+
+.photo3{
+
+background: url('../images/interviews/group.jpg');
+
+}
+
+.photo2,.photo3{
+
+height:250px;
+
+}
+
+
+
+.photo1,.photo2,.photo3{
+
+border:white thin solid;
+background-size:cover;
+background-repeat:no-repeat;
+width:100%;
+
+}
+
+.chip,.chipFeature {
+display: table;
+padding: 30px 10px;
+height: 50px;
+font-size: 12px;
+color:white;
+width:100%;
+margin-left:20px;
+line-height:14px;
+
+
+}
+
+.chipFeature {
+
+padding: 0px 10px!important;
+height: 5px!important;
+
+
+}
+
+.chip img , .chipFeature img{
+float: left;
+margin: 0 10px 0 -25px;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+}
+
+
+.blackRow .chipText{
+
+font-size: 150%;
+
+}
+
+.chipText{
+
+
+  color:black!important;
+  display:table-cell;
+  vertical-align: middle;
+  
+  font-family: 'FontspringLight';
+
+
+}
+
+.tag span{
+
+  color:white!important;
+  font-weight: bold;
+}
+
+.w3-display-bottomleft, .w3-display-topleft, .w3-display-topright{
+
+background-color:#cb410b;
+padding: 12px;
+width:100%;
+color:white;
+opacity: 0.8;
+filter: alpha(opacity=80);
+
+}
+
+.adSpace{
+
+text-align: center!important;
+
+}
+
+.rightColAdSpace{
+
+  display:table-cell!important;
+  vertical-align: middle!important;
+ 
+  height: 100%!important;
+
+}
+
+.blackRow{
+
+color:black!important;
+background-color: none;
+overflow:hidden;
+
+}
+
+.bookingform-rewards-heading1{
+
+ color:black!important;
+
+}
+
+.carouselRow{
+
+background-color: black;
+
+}
+
+.bgImage{
+
+position:absolute;
+z-index: -1;
+
+
+}

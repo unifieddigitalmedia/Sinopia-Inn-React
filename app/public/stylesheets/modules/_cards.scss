@@ -1,0 +1,35 @@
+.demo-card-wide {
+
+  &.mdl-card {
+    width: auto;
+    margin: 0 auto;
+  }
+  > .mdl-card__title {
+    height: 300px!important;
+  }
+
+  .mdl-card__actions{
+
+  height:auto;
+
+text-align: center;
+font-size:14px!important;  
+
+ line-height: 190%;
+color:#535353;
+
+font-weight:100!important;
+
+  padding: 20px!important;
+
+}
+
+.mdl-card__title {
+  width: 100% !important;
+  color: #fff;
+  height: 172px;
+}
+
+
+}
+

@@ -1,0 +1,770 @@
+
+@font-face {
+font-family: 'Waiting for the Sunrise';
+src: url(../fonts/WaitingfortheSunrise.ttf);
+}
+
+
+@font-face {
+font-family: Fontspring;
+src: url(../fonts/Fontspring-DEMO-cera-medium.otf);
+}
+
+@font-face {
+font-family: FontspringLight;
+src: url(../fonts/Fontspring-DEMO-cera-light.otf);
+}
+
+@font-face {
+font-family: FontspringRegular;
+src: url(../fonts/Fontspring-DEMO-cera-regular.otf);
+}
+
+.demo-card-wide, .infowindow{
+  width: 512px!important;
+  border: red thin solid!important;
+}
+ .mdl-card__title {
+  width: 512px!important;
+  color: #fff;
+  height: 172px;
+  
+}
+
+.placelistitem {
+
+border-bottom:thin solid #eeeeee!important;
+padding:20px;
+
+
+}
+.btnLink {
+
+  float:right;
+  color:#cb410b!important ;
+  cursor: pointer;
+  font-family: 'Waiting for the Sunrise';
+
+}
+
+.btnLink:hover{
+
+  font-weight:bolder;
+}
+
+.placesList{
+
+  padding:0px!important;
+}
+
+.placeList{
+
+  cursor: pointer!important;
+}
+.mdl-list__item-primary-content{
+
+font-size: 12px;
+
+}
+
+
+input {
+
+ font-family:"FontspringLight";
+  
+}
+
+i{
+
+color:#cb410b!important ;
+
+
+
+}
+
+.placeDetails{
+  display:inline-block;
+
+  font-family:"FontspringLight";
+
+  font-size:12px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.optionsContainer{
+
+height:200px;
+
+max-height:200px;
+
+overflow:auto;
+-ms-overflow-style:auto;
+
+
+
+}
+
+.optionsContainer input{
+
+float:right;
+
+  }
+
+
+.headingTable{
+
+
+  background-color: black;
+  color:white;
+}
+
+.headingTable th{
+
+
+  
+  color:white;
+}
+
+.mdl-layout__content{
+
+
+width:100%;padding: 0px!important;
+
+}
+
+
+h3 {  font-family:'FontspringLight' ;border-bottom:#cb410b thin dotted;padding-bottom:30px; font-size:350%;font-weight:100!important; text-align: center;}
+
+p{
+
+  font-size:130%; line-height:35px; text-align: center;
+
+}
+
+table , span, ul{
+ width:100%;
+
+
+}
+
+
+/****** Modal CSS ******/
+
+
+.modal-footer-panel {
+    display:none;
+    position: relative; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    overflow: auto;
+    -webkit-animation-name: slideIn; 
+    -webkit-animation-duration: 1s;
+    animation-name: slideIn;
+    animation-duration: 1s;
+
+
+  
+}
+
+.modal-header {
+
+font-size:50%;
+
+}
+
+.modal-header a {
+
+color: #cb410b;
+
+}
+.modal-content-footer {
+    position: relative;
+    top: 0;
+   
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+
+   -webkit-animation-name: slideOut;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+  
+
+     background-color:black;
+}
+
+
+.close {
+    color: white!important;
+   
+    font-size: 40px!important;
+    font-weight: 900!important;
+    z-index:99!important;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+  color:#ffffff!important;font-weight:200;
+    padding: 2px 16px;
+   background-color:black;
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+   
+}
+
+.modal-header p{
+  color:#ffffff!important;
+  font-weight:200;
+  font-size:200%;
+   
+   
+}
+.modal-body {padding: 2px 16px;text-align:center;border:mone!important;}
+
+.modal-body p {color:#ffffff!important;}
+
+.modal-body a {color:#cb410b; }
+
+.modal-body a:visited {color:#aa9d2e; }
+
+.modal-footer {
+    padding: 2px 16px;
+
+
+       background-color:black;
+    color: #cb410b;
+}
+
+
+body,span,html {
+
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200!important;
+  font-size:13px!important;
+  margin: 0;
+   overflow-x: hidden;
+  color:#535353;
+ 
+}
+
+
+
+h3 {  border-bottom:#cb410b thin dotted;padding-bottom:30px; font-size:350%;font-weight:100!important; text-align: center;}
+
+p{
+
+  font-size:130%; line-height:35px; text-align: center; color:#535353;
+
+}
+
+.article a {
+
+color:#cb410b!important;
+  font-family: 'Waiting for the Sunrise';
+  text-decoration: none;
+  font-size:130%;
+
+}
+
+article a:hover{
+
+  font-weight: bolder!important;
+}
+
+.mobile-page-heading{
+
+  color:#cb410b!important;
+  font-family: 'Waiting for the Sunrise';
+}
+
+
+.homepage-link{
+
+  margin:0 auto;
+}
+
+.android-header{
+
+ overflow-y: hidden!important;
+
+}
+.android-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+  height:auto;
+  overflow-y: hidden;
+}
+
+
+        .demo-blog.mdl-layout .mdl-layout__content {
+  padding-top: 230px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  background-color: white!important;
+}
+.android-header {
+  overflow: auto;
+  background-color: white;
+  z-index:99;
+}
+
+  .android-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .android-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .android-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+
+
+  .android-navigation-container-main{
+
+    width:100%;
+
+
+  }
+
+.android-navigation-container {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      float: right;
+  }
+
+
+
+  .android-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+   
+  }
+
+  .android-navigation .mdl-navigation__link {
+  
+    height: 30px;
+    line-height: 38px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+
+
+
+  }
+
+.android-navigation .mdl-navigation__link:hover {
+     color:#cb410b  !important;
+     font-weight: bolder;
+  
+  }
+
+  .android-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .android-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .android-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+
+.android-link-menu:hover {
+  cursor: pointer;
+}
+
+.mdl-layout__title {
+  font-size: 14px;
+  text-align: center!important;
+  font-weight: 300;
+  margin: 0px auto!important;
+  overflow-y:hidden!important; 
+
+}
+
+
+.portfolio-header {
+  position: relative;
+
+}
+
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          width:100%!important;
+          overflow-y: hidden;
+}
+
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+.portfolio-logo-row {
+  min-height: 150px;
+
+  background-color:#f9f8f8!important;
+  
+}
+
+.is-compact .portfolio-logo-row {
+  min-height: auto;
+}
+
+.portfolio-logo {
+  background: url(../images/logo.png) 50% no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 700px;
+  margin: auto auto 5px;
+     overflow-y: hidden;
+}
+
+
+
+
+.is-compact .portfolio-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 7px;
+}
+.mdl-layout__content{
+
+width:100%;
+background-color:#ffffff!important;
+
+}
+
+
+.portfolio-navigation-row {
+  
+  text-transform: uppercase;
+  height: 45px;
+  width:100%;
+}
+
+.portfolio-navigation-row  .mdl-navigation {
+  text-align: center;
+ 
+}
+
+.portfolio-navigation-row .mdl-navigation__link {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 42px;
+}
+
+.portfolio-header .mdl-layout__drawer-button {
+    background-color: rgba(197, 197, 197, 0.44);
+}
+
+
+
+
+.mdl-layout__tab:hover{
+
+
+  color:#cb410b!important ;
+  text-decoration: none!important;
+
+}
+
+.mdl-button {
+
+font-family:'Waiting for the Sunrise'!important ;
+
+color:#ffffff!important;
+
+font-weight:bold!important ;
+
+width:100%;
+
+margin:0px!important;
+
+}
+
+
+
+.subscribe{
+
+color:white;
+ background-color:#cb410b!important;
+  font-family:'Waiting for the Sunrise' ;
+
+}
+
+
+
+
+ input{
+
+
+  font-family:'FontspringRegular';
+}
+
+.mc_embed_signup p {
+  color:#cb410b;
+  font-family:'Waiting for the Sunrise' ;
+}
+
+label{
+font-family:'FontspringLight';
+  
+}
+
+
+.w3-container:after,.w3-container:before, .w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before {content:"";display:table;clear:both}
+
+.w3-row-padding, .w3-row-padding>.w3-col{padding:0 1px}
+
+.w3-section {margin-top:16px!important;margin-bottom:16px!important;}
+
+.w3-col.s4{width:33.33333%; box-sizing:border-box}
+
+.w3-col.s2{width:16.66%; box-sizing:border-box}
+
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+
+.w3-content{max-width:980px;margin:auto}.w3-rest{overflow:hidden}
+
+footer{
+
+    background-color:#f9f8f8!important;
+}
+
+footer h1 {
+
+
+
+font-size:250%;
+
+font-family:'FontspringRegular'!important ;
+
+
+ }
+
+
+footer h4{
+
+    color:#cb410b!important;
+    font-family:'Waiting for the Sunrise'!important ;
+    font-weight: bold!important;
+
+
+
+}
+
+
+ footer a , footer p ,  medium , small {
+
+
+color:black!important;font-weight:200!important; 
+font-family:'FontspringRegular'!important ;
+margin:10px;
+
+}
+
+footer a:hover {
+
+
+color:#cb410b!important;text-decoration: none;
+
+
+}
+
+
+
+.mdl-mega-footer__link-list li {
+
+ line-height: 400%!important;
+ padding:0px!important;
+
+
+}
+
+.mdl-mega-footer__link-list medium {
+
+
+ border:red thin solid;
+}
+
+.mdl-mega-footer__link-list , {
+
+
+
+ padding: 0;
+
+ border:red thin solid;
+    list-style-type: none;
+}
+
+footer .text {
+
+  color:white;
+
+}
+
+
+.download_buttons{width: 130px; height: 40px;}
+
+ul li { list-style-type: none; padding:0px;}
+
+
+
+
+#google_translate_element a{
+padding:0px;margin-right:5px;width:100%;font-size:70%;
+}
+
+#google_translate_element span::before { 
+
+    content: "\00a0 "; 
+
+}
+
+#google_translate_element span::after { 
+
+    content: "\00a0 "; 
+
+}
+
+
+.goog-logo-link {
+   display:none !important;
+}
+.goog-te-gadget{
+   color: transparent !important;
+}
+.goog-te-gadget .goog-te-combo{
+   color: black !important;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/************************/
+@media (max-width: 700px) {
+
+
+.demo-card-wide.mdl-card {
+
+  width: 300px;
+  margin:0 auto;
+
+}
+
+
+.demo-card-wide > .mdl-card__title {
+  
+  height: 150px;
+
+
+}
+
+
+.portfolio-logo {
+
+  height: 150px;
+  width: 350px;
+
+}
+
+.hero-text {
+
+ 
+  
+    left:-30px;
+
+   
+}
+
+
+
+}
+
+@media (max-width: 480px) {
+
+
+.hero-text {
+
+ 
+    width:300px;
+    left:-30px;
+
+   
+}
+
+.portfolio-logo {
+position: relative;
+  height: 150px;
+  width: 350px;
+
+  left:-75px;
+
+}
+
+
+
+}
+
+
+

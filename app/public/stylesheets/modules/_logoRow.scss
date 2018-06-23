@@ -1,0 +1,44 @@
+.portfolio-logo-row {
+
+ 
+  padding: 0;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width:100%;
+  overflow-y: hidden;
+  height:auto;
+  min-height: 100px;
+  -webkit-transition: height 0.5s;
+
+  overflow: hidden!important;
+ -ms-overflow-style: none!important;
+  transition: height 0.5s;
+  background-color: #f9f8f8;
+
+  .portfolio-logo {
+  
+  background: url(../images/logo.png) 20% no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 350px;
+  margin: auto auto 5px;
+
+  overflow: hidden!important;
+ -ms-overflow-style: none!important;
+  
+   @include respond-to($tablet-portrait) {
+
+  
+  
+ }
+ @include respond-to( $phone) {
+
+ left:-45px!important;
+
+ }
+
+  }
+
+
+}

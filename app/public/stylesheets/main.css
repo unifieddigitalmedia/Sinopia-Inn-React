@@ -1,0 +1,1221 @@
+@font-face {
+  font-family: 'Waiting for the Sunrise';
+  src: url(../fonts/WaitingfortheSunrise.ttf); }
+
+@font-face {
+  font-family: Fontspring;
+  src: url(../fonts/Fontspring-DEMO-cera-medium.otf); }
+
+@font-face {
+  font-family: FontspringLight;
+  src: url(../fonts/Fontspring-DEMO-cera-light.otf); }
+
+@font-face {
+  font-family: FontspringRegular;
+  src: url(../fonts/Fontspring-DEMO-cera-regular.otf); }
+
+.personalDetails .mdl-textfield {
+  width: 100%; }
+
+.innerGrid {
+  width: 80%;
+  margin: 0 auto; }
+
+button.accordion {
+  background-color: #f7f7f7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 20px; }
+
+.orderSummary .accordion {
+  background-color: #aa9d2e;
+  color: white; }
+
+.orderSummary .paymentPanel large {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: thin solid #eeeeee; }
+
+.summaryThirdchild {
+  width: 100%;
+  border: red thin solid !important; }
+
+.summaryFirstchild {
+  background-color: #f7f7f7 !important;
+  font-weight: bold !important; }
+
+.summarySecondchild label small, .summaryThirdchild label small, .paymentPanel small {
+  color: #a8a7a7 !important; }
+
+.orderSummary .paymentPanel {
+  height: auto !important;
+  padding: 0px 0px !important;
+  overflow-x: hidden;
+  border: thin solid #eeeeee !important; }
+
+.orderSummary article {
+  border: thin solid #eeeeee !important;
+  width: 100%;
+  margin: 0px !important;
+  padding: 20px 0px !important; }
+  .orderSummary article label small:nth-child(2), .orderSummary article label medium:nth-child(2), .orderSummary article label .demo-list-three:nth-child(2) {
+    float: right !important; }
+
+.totalRow {
+  color: black !important;
+  font-weight: bold !important; }
+
+button.payment, article.payment {
+  background-color: #ffffff !important;
+  padding: 15px !important;
+  font-size: 14px !important;
+  color: black;
+  border: thin solid #eeeeee; }
+
+.paymentArticle {
+  padding: 0px !important; }
+
+article.payment img {
+  display: inline;
+  padding: 2px; }
+
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd; }
+
+button.payment:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+button.payment.active:after {
+  content: "\2212"; }
+
+div.paymentPanel {
+  position: relative;
+  padding: 0px 25px;
+  background-color: #eee;
+  height: 0;
+  transition: height 0.2s ease-out;
+  overflow: auto !important;
+  -ms-overflow-style: none; }
+  div.paymentPanel article {
+    padding-left: 10px;
+    padding-right: 10px; }
+  div.paymentPanel medium, div.paymentPanel .demo-list-three {
+    font-weight: 200;
+    text-align: center !important;
+    margin: 0px !important; }
+
+.active_height {
+  height: 300px; }
+
+.accordinContinue {
+  color: #ffffff !important;
+  position: absolute;
+  width: 30%;
+  right: 0 !important;
+  margin: 15px !important;
+  font-family: 'Waiting for the Sunrise'; }
+  .accordinContinue:hover {
+    color: #eedc00 !important;
+    font-weight: bolder; }
+
+.innerGrid article {
+  background-color: white;
+  padding: 10px;
+  margin: 20px; }
+
+.innerGrid label {
+  font-size: 18px; }
+
+.smallLabel {
+  font-size: 14px !important;
+  height: auto;
+  font-family: Helvetica, sans-serif; }
+
+large {
+  padding: 20px;
+  margin: 10px !important;
+  font-size: 20px; }
+
+.clear {
+  clear: both;
+  line-height: 0; }
+
+table {
+  width: 100%; }
+  table th {
+    font-weight: 200 !important; }
+
+.moneyCell {
+  text-align: right !important;
+  font-weight: 200 !important; }
+
+.house-rules {
+  color: #cb410b !important;
+  text-decoration: none; }
+  .house-rules:hover {
+    font-weight: bolder; }
+
+.mdl-layout__content, table, ul {
+  width: 100%; }
+
+.demo-content {
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+.mdl-cell--3-col {
+  padding: 0px !important; }
+
+.mdl-list__item {
+  text-align: left !important;
+  padding: 20px !important; }
+
+.mdl-list__item-text-body {
+  height: auto !important; }
+
+.mdl-list__item-secondary-content:hover, .removeBtn:hover {
+  color: #cb410b !important;
+  cursor: pointer;
+  font-weight: bold; }
+
+.slide-fade li {
+  transition: all 0.4s ease-out;
+  opacity: 0; }
+  .slide-fade li.show {
+    opacity: 1; }
+
+.responsiveTable {
+  overflow-x: 'auto'; }
+
+.modalReservationError {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center; }
+  .modalReservationError h1 {
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    font-weight: 200; }
+  .modalReservationError i {
+    animation: ripple 1.5s ease-out;
+    animation-iteration-count: infinite;
+    font-size: 160px !important; }
+
+.innermodalReservation {
+  display: table-cell;
+  vertical-align: middle; }
+
+.progressIcons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -4em;
+  width: 200px;
+  height: 200px; }
+
+.closeReservation {
+  color: #cb410b !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 100px !important;
+  font-weight: bold; }
+  .closeReservation:hover, .closeReservation:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer; }
+
+.mdl-textfield__icon {
+  width: 48px;
+  text-align: center;
+  position: absolute;
+  line-height: 1.5; }
+  .mdl-textfield__icon ~ * {
+    margin-left: 48px;
+    width: calc(100% - 48px); }
+
+.reservation_mdl-textfield__icon {
+  color: #cb410b !important;
+  line-height: 2.5 !important; }
+
+.modalReservation {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: black; }
+  .modalReservation .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px; }
+  .modalReservation .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold; }
+    .modalReservation .close:hover, .modalReservation .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer; }
+  .modalReservation .mySlides {
+    display: none;
+    height: 500px !important; }
+    .modalReservation .mySlides img {
+      height: 500px !important; }
+  .modalReservation .column {
+    float: left;
+    width: 25%; }
+  .modalReservation .prev, .modalReservation .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none; }
+    .modalReservation .prevhover, .modalReservation .nexthover {
+      background-color: rgba(0, 0, 0, 0.8); }
+  .modalReservation .prev {
+    left: 0; }
+  .modalReservation .next {
+    right: 0; }
+  .modalReservation img {
+    margin-bottom: -4px;
+    width: 100%; }
+  .modalReservation .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 5px;
+    color: white; }
+  .modalReservation .demo {
+    opacity: 0.6; }
+  .modalReservation .active, .modalReservation .demo:hover {
+    opacity: 1; }
+  .modalReservation img.hover-shadow {
+    transition: 0.3s; }
+  .modalReservation .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.goog-logo-link {
+  display: none !important; }
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0px; }
+
+.goog-te-combo {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #687074;
+  cursor: pointer;
+  width: 75px;
+  margin: 0px 0px; }
+
+.dup-goog-te-combo {
+  display: none; }
+
+#google_translate_element {
+  width: 300px;
+  float: right;
+  text-align: right;
+  display: block; }
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important; }
+
+body {
+  top: 0px !important; }
+
+#goog-gt-tt, .goog-tooltip skiptranslate {
+  display: none !important;
+  top: 0px !important; }
+
+.activity-root, .status-message, .started-activity-container {
+  display: hide !important; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #535353;
+    display: block;
+    transition: 0.3s; }
+    .sidenav a:hover {
+      color: #cb410b; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+.overlay {
+  position: fixed;
+  height: 0%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden !important;
+  transition: 0.5s;
+  color: #ffffff;
+  z-index: 999; }
+  .overlay .overlay-content {
+    padding: 20px;
+    position: relative;
+    top: 5%;
+    width: 60%;
+    margin: 0 auto; }
+    .overlay .overlay-content .closebtn {
+      position: relative;
+      float: right !important;
+      font-size: 40px !important;
+      color: #ffffff; }
+      .overlay .overlay-content .closebtn:hover, .overlay .overlay-content .closebtn:focus {
+        color: #cb410b;
+        text-decoration: none;
+        cursor: pointer; }
+    .overlay .overlay-content a {
+      color: #cb410b; }
+    .overlay .overlay-content form {
+      display: block;
+      width: 100%; }
+      .overlay .overlay-content form .mdl-textfield, .overlay .overlay-content form .mdl-button {
+        color: #ffffff;
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Waiting for the Sunrise'; }
+      .overlay .overlay-content form .mdl-textfield__input {
+        border-bottom: 1px solid #ffffff;
+        width: 100%; }
+      .overlay .overlay-content form .mdl-textfield__label {
+        color: #ffffff; }
+      .overlay .overlay-content form .mdl-textfield .mdl-textfield__icon {
+        width: 32px;
+        text-align: center;
+        position: absolute;
+        line-height: 1.5; }
+        .overlay .overlay-content form .mdl-textfield .mdl-textfield__icon ~ * {
+          margin-left: 48px;
+          width: calc(100% - 48px); }
+
+.android-header {
+  overflow-y: hidden;
+  -ms-overflow-style: none; }
+  .android-header .topnavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; }
+    .android-header .topnavbar li {
+      float: right;
+      width: 75px !important; }
+      .android-header .topnavbar li span {
+        display: block;
+        color: grey;
+        padding: 16px;
+        cursor: pointer; }
+        .android-header .topnavbar li span:hover {
+          color: #cb410b; }
+  .android-header .dateChooser {
+    display: none;
+    cursor: pointer; }
+    @media only screen and (max-width: 880px) {
+      .android-header .dateChooser {
+        display: block; } }
+
+.portfolio-logo-row {
+  padding: 0;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  overflow-y: hidden;
+  height: auto;
+  min-height: 100px;
+  -webkit-transition: height 0.5s;
+  overflow: hidden !important;
+  -ms-overflow-style: none !important;
+  transition: height 0.5s;
+  background-color: #f9f8f8; }
+  .portfolio-logo-row .portfolio-logo {
+    background: url(../images/logo.png) 20% no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 350px;
+    margin: auto auto 5px;
+    overflow: hidden !important;
+    -ms-overflow-style: none !important; }
+    @media only screen and (max-width: 480px) {
+      .portfolio-logo-row .portfolio-logo {
+        left: -45px !important; } }
+
+.mdl-layout__tab-bar {
+  text-transform: uppercase;
+  height: 45px !important;
+  width: 97% !important;
+  overflow-x: hidden;
+  -ms-overflow-style: none; }
+  .mdl-layout__tab-bar .mdl-layout__tab {
+    font-family: FontspringRegular !important;
+    width: 500px;
+    display: table-cell;
+    vertical-align: middle; }
+    .mdl-layout__tab-bar .mdl-layout__tab:hover {
+      text-decoration: none; }
+  .mdl-layout__tab-bar .menudivider {
+    color: #cb410b; }
+  .mdl-layout__tab-bar li {
+    list-style-type: none;
+    padding: 0px;
+    line-height: 45px; }
+  @media only screen and (max-width: 880px) {
+    .mdl-layout__tab-bar {
+      width: 87% !important; } }
+
+.menu {
+  padding: 0px;
+  position: relative;
+  height: 0px !important;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  background-color: #f9f8f8; }
+  .menu li {
+    display: inline !important; }
+    .menu li:nth-child(1) a:hover {
+      color: #d40f7d !important;
+      border-bottom: thick #d40f7d solid; }
+    .menu li:nth-child(2) a:hover {
+      color: #ffb549 !important;
+      border-bottom: thick #ffb549 solid; }
+    .menu li:nth-child(3) a:hover {
+      color: #eedc00 !important;
+      border-bottom: thick #eedc00 solid; }
+    .menu li:nth-child(4) a:hover {
+      color: #aa9d2e !important;
+      border-bottom: thick #aa9d2e solid; }
+    .menu li:nth-child(5) a:hover {
+      color: #4298b5 !important;
+      border-bottom: thick #4298b5 solid; }
+    .menu li:nth-child(6) a:hover {
+      color: #6b3077 !important;
+      border-bottom: thick #6b3077 solid; }
+
+.sub-menu-menu {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  height: 0px !important;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s; }
+  .sub-menu-menu li {
+    cursor: pointer; }
+    .sub-menu-menu li:hover {
+      color: #cb410b !important; }
+  .sub-menu-menu .mdl-grid {
+    width: 60%;
+    margin: 0 auto; }
+  .sub-menu-menu .sub-menu-menu-menu {
+    display: none; }
+    .sub-menu-menu .sub-menu-menu-menu li {
+      list-style-type: none;
+      color: #a7a6a6;
+      font-weight: 200; }
+      .sub-menu-menu .sub-menu-menu-menu li:hover {
+        cursor: pointer;
+        text-decoration: underline !important; }
+
+.active_menu {
+  height: 50px !important; }
+
+.active_sub_menu {
+  display: block !important; }
+
+.active_sub_menu_ {
+  height: 350px !important; }
+
+.infowindow {
+  width: 512px !important;
+  border: red thin solid !important; }
+  .infowindow .mdl-card__title {
+    width: 512px !important;
+    color: #fff;
+    height: 172px; }
+
+#timer {
+  color: #cb410b !important;
+  font-family: 'Waiting for the Sunrise';
+  font-size: 100%; }
+
+.mdl-layout__content .contact-container-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #535353; }
+  .mdl-layout__content .contact-container-content .mdl-textfield, .mdl-layout__content .contact-container-content .mdl-button {
+    width: 100%; }
+
+.mdl-layout__content .infowindowDescription {
+  font-family: Waiting for the Sunrise; }
+
+.mdl-layout__content .mdl-list__item-primary-content, .mdl-layout__content .optionsContainer span {
+  overflow: hidden !important;
+  -ms-overflow-style: none;
+  font-weight: 200;
+  color: #535353; }
+  .mdl-layout__content .mdl-list__item-primary-content .mdl-textfield__input, .mdl-layout__content .optionsContainer span .mdl-textfield__input {
+    width: 100% !important; }
+
+.mdl-layout__content ul {
+  padding-left: 0; }
+  .mdl-layout__content ul li {
+    list-style-type: none; }
+
+.mdl-layout__content .reservation__content, .mdl-layout__content .demo-content, .mdl-layout__content table {
+  width: 100% !important; }
+  .mdl-layout__content .reservation__content thead tr th, .mdl-layout__content .demo-content thead tr th, .mdl-layout__content table thead tr th {
+    color: black; }
+
+.mdl-layout__content .mdl-list__item-icon {
+  color: #cb410b !important; }
+
+.mdl-layout__content .btnLink {
+  float: right;
+  color: #cb410b !important;
+  cursor: pointer;
+  font-family: 'Waiting for the Sunrise'; }
+  .mdl-layout__content .btnLink:hover {
+    font-weight: bolder; }
+
+.mdl-layout__content .placelistitem {
+  border-bottom: thin solid #eeeeee !important;
+  padding: 20px; }
+
+.tripConfirm, .paymentBtn {
+  width: 100%;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-family: 'Waiting for the Sunrise'; }
+  .tripConfirm:hover, .paymentBtn:hover {
+    color: #eedc00 !important;
+    font-weight: bolder; }
+
+.paymentBtn {
+  font-family: 'Waiting for the Sunrise'; }
+
+.w3-section {
+  margin: 0 auto !important; }
+
+.hero-section {
+  position: relative; }
+  .hero-section img {
+    width: 100% !important; }
+  .hero-section .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: -15px;
+    width: 350px;
+    transform: translate(10%, -35%);
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 10px; }
+    .hero-section .hero-text .tagline {
+      font-family: "Waiting for the Sunrise" !important; }
+    @media only screen and (max-width: 880px) {
+      .hero-section .hero-text {
+        height: 50%;
+        left: -35px; } }
+    @media only screen and (max-width: 480px) {
+      .hero-section .hero-text {
+        width: 100%; } }
+    .hero-section .hero-text .hero-text-container {
+      background-color: black;
+      border: #aa9d2e dotted thin;
+      padding: 20px;
+      height: 100%; }
+      @media only screen and (max-width: 880px) {
+        .hero-section .hero-text .hero-text-container {
+          height: 80%;
+          padding: 10px; } }
+      @media only screen and (max-width: 480px) {
+        .hero-section .hero-text .hero-text-container {
+          width: 80%;
+          margin: 0 auto;
+          padding-top: 0px !important; } }
+      .hero-section .hero-text .hero-text-container h1 {
+        color: #aa9d2e;
+        font-size: 300%;
+        padding-bottom: 10px;
+        font-family: "FontspringLight"; }
+        @media only screen and (max-width: 880px) {
+          .hero-section .hero-text .hero-text-container h1 {
+            font-size: 100%;
+            padding: 0px !important;
+            margin: 0px; } }
+      .hero-section .hero-text .hero-text-container p {
+        color: white;
+        border-top: #aa9d2e thin dotted;
+        padding-top: 5px;
+        font-size: 100%;
+        font-family: "FontspringLight"; }
+        @media only screen and (max-width: 880px) {
+          .hero-section .hero-text .hero-text-container p {
+            font-size: 70%;
+            line-height: 12px !important; } }
+      .hero-section .hero-text .hero-text-container a {
+        text-decoration: none;
+        font-family: 'Waiting for the Sunrise';
+        color: #cb410b; }
+
+.hero-image-index-blog {
+  background-image: url("../../images/hero-images/homepage.jpg"); }
+
+.hero-image-index {
+  background-image: url("../images/hero-images/homepage.jpg"); }
+
+.hero-image-villa {
+  background-image: url("../images/hero-images/homepage1.jpg");
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hero-image-room {
+  background-image: url("../images/hero-images/homepage2.jpg"); }
+
+.hero-image-travel {
+  background-image: url("../images/hero-images/homepage3.jpg"); }
+
+.hero-image-rewards {
+  background-image: url("../images/hero-images/homepage5.jpg"); }
+
+.hero-image-directions {
+  background-image: url("../images/hero-images/homepage6.jpg"); }
+
+.hero-image-mobile {
+  height: auto !important;
+  position: relative;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 ); }
+
+.hero-text-mobile {
+  position: relative;
+  top: 0%;
+  width: 450px;
+  color: white;
+  padding: 10px; }
+  .hero-text-mobile .bookingform-rewards-heading {
+    color: white;
+    font-size: 90% !important;
+    font-weight: 200; }
+  .hero-text-mobile .bookingform-rewards-heading1 {
+    font-size: 110%;
+    color: #3b0053;
+    font-family: 'Waiting for the Sunrise';
+    font-weight: 900; }
+  .hero-text-mobile .bookingform-rewards-cta {
+    color: #eedc00;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: 900 !important;
+    float: right;
+    font-size: 150% !important;
+    text-decoration: none; }
+    .hero-text-mobile .bookingform-rewards-cta:hover {
+      color: #eedc00;
+      text-decoration: underline; }
+  .hero-text-mobile .bookingform-subtext {
+    color: black;
+    line-height: none;
+    font-size: 100%; }
+
+.icon-row {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  line-height: 2px;
+  background: #cb410b;
+  background: -moz-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: -webkit-linear-gradient(top, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  background: linear-gradient(to bottom, #cb410b 0%, #cb410b 100%, #c96c4a 100%, #c9856c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb410b', endColorstr='#c9856c',GradientType=0 ); }
+  .icon-row .side_menu_title_para-res {
+    text-align: center;
+    border-bottom: #cb410b thin solid; }
+    .icon-row .side_menu_title_para-res .service_icon-res-heading {
+      color: #eedc00; }
+    .icon-row .side_menu_title_para-res i {
+      color: #eedc00 !important; }
+    .icon-row .side_menu_title_para-res .service_icon-res-text {
+      font-size: 80%;
+      font-weight: 100 !important;
+      color: #ffffff; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  opacity: 1 !important;
+  filter: Alpha(opacity=100) !important;
+  width: 100%; }
+
+.reservationform {
+  opacity: 0.8;
+  filter: Alpha(opacity=80);
+  z-index: 999;
+  transition: all 0.4s ease;
+  color: black;
+  background-color: #e9e8e8;
+  height: auto;
+  width: 100%;
+  display: table;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center; }
+  @media only screen and (max-width: 880px) {
+    .reservationform {
+      display: none; } }
+
+.formlist {
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  padding: 10px;
+  z-index: 10000; }
+  .formlist li {
+    display: inline-block;
+    height: 90%;
+    padding-left: 20px; }
+    .formlist li i {
+      width: 32px;
+      text-align: center;
+      position: absolute;
+      line-height: 1.5; }
+      .formlist li i ~ * {
+        margin-left: 48px;
+        width: calc(100% - 48px); }
+    .formlist li input {
+      padding-right: 40px;
+      border: none;
+      height: 100%;
+      width: 110px;
+      background-color: inherit;
+      border-right: thin solid #cb410b; }
+      .formlist li input:focus {
+        outline: none; }
+    .formlist li button {
+      border: none;
+      height: 100%;
+      font-size: 14px !important;
+      font-family: "Waiting for the Sunrise";
+      color: #ffffff;
+      font-weight: bold;
+      background-color: #cb410b;
+      cursor: pointer;
+      width: 200px; }
+      .formlist li button:hover {
+        color: #eedc00; }
+
+.row2 {
+  background-color: #f9f8f8 !important; }
+
+.table {
+  display: table;
+  width: 100%; }
+  @media only screen and (max-width: 880px) {
+    .table {
+      display: block !important; } }
+  .table .table-cell {
+    display: table-cell;
+    text-align: center !important;
+    vertical-align: middle;
+    padding: 30px;
+    width: 50%;
+    height: 400px; }
+    @media only screen and (max-width: 880px) {
+      .table .table-cell {
+        display: block !important;
+        text-align: center !important;
+        display: inline-block !important;
+        width: 100%;
+        padding: 0px;
+        margin-top: 80px; }
+        .table .table-cell .mySlides, .table .table-cell .featureImg, .table .table-cell p {
+          width: 90% !important;
+          margin: 0 auto !important; } }
+    .table .table-cell .featureImg {
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .table .table-cell .btn-link {
+      margin: 0px;
+      font-weight: 400;
+      color: #337ab7;
+      border-radius: 0;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      font-size: 150%;
+      font-family: "Waiting for the Sunrise";
+      color: #cb410b;
+      border-color: transparent; }
+      .table .table-cell .btn-link.active, .table .table-cell .btn-link:active, .table .table-cell .btn-link[disabled] {
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 150%;
+        font-family: "Waiting for the Sunrise";
+        color: #cb410b; }
+      .table .table-cell .btn-link:active, .table .table-cell .btn-link:focus, .table .table-cell .btn-link:hover {
+        border-color: transparent;
+        outline: none; }
+      .table .table-cell .btn-link:focus, .table .table-cell .btn-link:hover {
+        font-weight: bolder !important;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none; }
+    .table .table-cell a {
+      color: #cb410b;
+      text-decoration: none;
+      font-family: "Waiting for the Sunrise";
+      font-size: 150%;
+      cursor: pointer; }
+      .table .table-cell a:hover {
+        font-weight: 900; }
+    .table .table-cell p {
+      font-size: 14px;
+      text-align: center;
+      color: #535353;
+      font-weight: 100; }
+    .table .table-cell h3 {
+      border-bottom: #cb410b thin dotted;
+      padding-bottom: 30px;
+      font-size: 350%;
+      font-weight: 100; }
+
+.mySlides, .myTravelSlides {
+  display: none;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.w3-container:after, .w3-container:before {
+  content: "";
+  display: table;
+  clear: both; }
+
+.w3-row:after, .w3-row:before {
+  content: "";
+  display: table;
+  clear: both; }
+
+.w3-row-padding {
+  padding: 0 1px; }
+  .w3-row-padding:after, .w3-row-padding:before {
+    content: "";
+    display: table;
+    clear: both; }
+  .w3-row-padding > .w3-col {
+    padding: 0 1px; }
+
+.w3-section {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important; }
+
+.w3-col {
+  float: left;
+  width: 100%; }
+  .w3-col.s4 {
+    /*width: 33.33333%;*/
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px !important;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    @media only screen and (max-width: 880px) {
+      .w3-col.s4 {
+        width: 25%; } }
+  .w3-col.s2 {
+    width: 16.66%;
+    box-sizing: border-box;
+    padding: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    @media only screen and (max-width: 880px) {
+      .w3-col.s2 {
+        width: 12.66%; } }
+
+.w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+  float: left;
+  width: 100%; }
+
+.w3-opacity, .w3-hover-opacity:hover {
+  opacity: 0.60; }
+
+.w3-opacity-off, .w3-hover-opacity-off:hover {
+  opacity: 1; }
+
+.w3-content {
+  max-width: 980px;
+  margin: auto; }
+
+.w3-rest {
+  overflow: hidden; }
+
+.demo-list-three {
+  text-align: left; }
+  .demo-list-three li span {
+    height: auto !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none; }
+    .demo-list-three li span .mdl-list__item-avatar {
+      color: #cb410b;
+      background-color: transparent; }
+    .demo-list-three li span .amenitiesAvatar {
+      color: white !important;
+      background-color: #cb410b !important; }
+
+.w3-content {
+  width: 100% !important;
+  max-width: 980px;
+  margin: auto;
+  height: 400px; }
+
+.w3-display-left {
+  position: absoulte;
+  top: 50% !important;
+  left: 0% !important;
+  transform: translate(0%, -50%) !important;
+  -ms-transform: translate(0%, -50%) !important; }
+
+.w3-display-right {
+  position: absoulte;
+  top: 50% !important;
+  right: 0% !important;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
+
+.w3-black, .w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important; }
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap; }
+
+.w3-btn {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .w3-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.w3-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.parallaxContent {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto !important;
+  vertical-align: bottom !important;
+  display: table-cell;
+  z-index: 99;
+  width: 50% !important; }
+  .parallaxContent h1 {
+    text-align: center;
+    color: #bebebe;
+    font-weight: 200;
+    font-size: 200%; }
+  .parallaxContent img {
+    width: 20%;
+    padding: 1px;
+    height: 40%; }
+  .parallaxContent div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
+
+footer {
+  background-color: #f9f8f8 !important; }
+  footer h1 {
+    font-size: 250%;
+    font-family: "FontspringRegular" !important; }
+  footer h4 {
+    color: #cb410b !important;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: bold !important; }
+  footer a, footer p, footer medium, footer .demo-list-three, footer small {
+    color: black !important;
+    font-weight: 200 !important;
+    font-family: Helvetica, sans-serif !important;
+    margin: 10px; }
+  footer a:hover {
+    color: #cb410b !important;
+    text-decoration: none; }
+  footer .mdl-mega-footer__link-list {
+    padding: 0;
+    list-style-type: none; }
+    footer .mdl-mega-footer__link-list li {
+      line-height: 400% !important;
+      padding: 0px !important; }
+  footer .text {
+    color: white; }
+  footer .download_buttons {
+    width: 130px;
+    height: 40px; }
+
+.tabcontent {
+  width: 100%;
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; }
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center; }
+  .tab article {
+    width: 60%;
+    margin: 0 auto; }
+  .tab .tablinks {
+    background-color: inherit;
+    font-family: "Waiting for the Sunrise" !important;
+    font-size: 30px;
+    color: #cb410b !important;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s; }
+    .tab .tablinks:hover {
+      font-weight: bolder; }
+    .tab .tablinks.active {
+      background-color: #ccc; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.demo-card-wide.mdl-card {
+  width: auto;
+  margin: 0 auto; }
+
+.demo-card-wide > .mdl-card__title {
+  height: 300px !important; }
+
+.demo-card-wide .mdl-card__actions {
+  height: auto;
+  text-align: center;
+  font-size: 14px !important;
+  line-height: 190%;
+  color: #535353;
+  font-weight: 100 !important;
+  padding: 20px !important; }
+
+.demo-card-wide .mdl-card__title {
+  width: 100% !important;
+  color: #fff;
+  height: 172px; }
+
+.mdl-dialog__content {
+  text-align: center; }
+  .mdl-dialog__content .smalLogo {
+    margin: 0 auto; }
+  .mdl-dialog__content .closeDialog {
+    cursor: pointer;
+    float: right; }
+
+.filterTextbox {
+  color: black; }
+
+.dialogButtonContainer button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #cb410b !important;
+  font-family: 'Waiting for the Sunrise'; }
+  .dialogButtonContainer button:hover, .dialogButtonContainer button:focus {
+    font-weight: bolder;
+    cursor: pointer; }
+
+.roomRatesTable td {
+  text-align: center !important; }

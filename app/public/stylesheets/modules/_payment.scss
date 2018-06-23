@@ -1,0 +1,209 @@
+.personalDetails{
+  
+
+  .mdl-textfield{
+
+
+  width:100%;
+  
+  }
+}
+
+
+.innerGrid {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button.accordion {
+  background-color: #f7f7f7;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.orderSummary {
+  .accordion {
+    background-color: #aa9d2e;
+    color: white;
+  }
+  .paymentPanel large {
+    width: 100%;
+    background-color: #f7f7f7;
+    border: thin solid #eeeeee;
+  }
+}
+
+.summaryThirdchild {
+  width: 100%;
+  border: red thin solid !important;
+}
+
+.summaryFirstchild {
+  background-color: #f7f7f7 !important;
+  font-weight: bold !important;
+}
+
+.summarySecondchild label small, .summaryThirdchild label small, .paymentPanel small {
+  color: #a8a7a7 !important;
+}
+
+.orderSummary {
+  .paymentPanel {
+    height: auto !important;
+    padding: 0px 0px !important;
+    overflow-x: hidden;
+
+    border: thin solid #eeeeee !important;
+  }
+  article {
+    border: thin solid #eeeeee !important;
+    width: 100%;
+    margin: 0px !important;
+    padding: 20px 0px !important;
+    label {
+      small:nth-child(2), medium:nth-child(2) {
+        float: right !important;
+      }
+    }
+  }
+}
+
+.totalRow {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+button.payment, article.payment {
+  background-color: #ffffff !important;
+  padding: 15px !important;
+  font-size: 14px !important;
+  color: black;
+  border: thin solid #eeeeee;
+}
+
+.paymentArticle {
+  padding: 0px !important;
+}
+
+article.payment img {
+  display: inline;
+  padding: 2px;
+}
+
+button {
+  &.accordion {
+    &.active, &:hover {
+      background-color: #ddd;
+    }
+  }
+  &.payment {
+    &:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    &.active:after {
+      content: "\2212";
+    }
+  }
+}
+
+div.paymentPanel {
+  position: relative;
+  padding: 0px 25px;
+  background-color: #eee;
+  height: 0;
+  transition: height 0.2s ease-out;
+  overflow: auto !important;
+  -ms-overflow-style: none;
+  article {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  medium {
+    font-weight: 200;
+    text-align: center !important;
+    margin: 0px !important;
+  }
+}
+
+.active_height {
+  height: 300px;
+}
+
+.accordinContinue {
+color:#ffffff!important;
+  position: absolute;
+  width: 30%;
+  right: 0 !important;
+  margin: 15px !important;
+  font-family: 'Waiting for the Sunrise';
+      &:hover{
+        color: #eedc00!important ;
+        font-weight:bolder;
+
+
+      }
+}
+
+.innerGrid {
+  article {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+  }
+  label {
+    font-size: 18px;
+  }
+}
+
+.smallLabel {
+  font-size: 14px !important;
+  height: auto;
+  font-family: Helvetica, sans-serif;
+}
+
+large {
+  padding: 20px;
+  margin: 10px !important;
+  font-size: 20px;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+}
+
+table {
+  width: 100%;
+  th {
+    font-weight: 200 !important;
+  }
+}
+
+.moneyCell {
+  text-align: right !important;
+  font-weight: 200 !important;
+}
+
+.house-rules{
+  
+   color:#cb410b!important ;
+   text-decoration:none;
+
+&:hover{
+       
+        font-weight:bolder;
+
+
+      }
+}

@@ -1,0 +1,50 @@
+footer {
+  background-color: #f9f8f8 !important;
+  h1 {
+    font-size: 250%;
+    font-family: "FontspringRegular" !important;
+  }
+  h4 {
+    color: #cb410b !important;
+    font-family: "Waiting for the Sunrise" !important;
+    font-weight: bold !important;
+  }
+  a, p , medium, small{
+    color: black !important;
+    font-weight: 200 !important;
+    font-family: Helvetica, sans-serif !important;
+    margin: 10px;
+  }
+
+  a:hover {
+  color: #cb410b !important;
+  text-decoration: none;
+}
+
+.mdl-mega-footer__link-list {
+
+  li {
+    line-height: 400% !important;
+    padding: 0px !important;
+  }
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.text {
+  color: white;
+}
+
+
+.download_buttons {
+  width: 130px;
+  height: 40px;
+}
+
+}
+
+
+
+
+
